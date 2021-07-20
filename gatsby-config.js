@@ -3,5 +3,6 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "ente",
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-gatsby-cloud"],
+  plugins: ["gatsby-plugin-netlify-cms", 
+  "gatsby-plugin-gatsby-cloud"],
 };

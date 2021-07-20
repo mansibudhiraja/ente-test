@@ -4,5 +4,6 @@ module.exports = {
     title: "ente",
   },
   plugins: [ 
-  "gatsby-plugin-gatsby-cloud"],
+  "gatsby-plugin-gatsby-cloud",
+  "gatsby-plugin-image",]
 };

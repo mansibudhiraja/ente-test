@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
+import {Link} from 'gatsby'
 
 const FAQ = () => {
     return (
@@ -22,7 +23,7 @@ const FAQ = () => {
                         <p>
                             <a href="https://libsodium.gitbook.io/doc/" target="_blank" rel="noopener">libsodium</a> implementation of <code>XChaCha20</code> is used to encrypt your data, along with
                             <code> Poly1305</code> MAC for authentication.
-                            <br/>our <a href="../components/Architecture/Architecture">architecture</a> and <a href="https://github.com/ente-io/" target="_blank" rel="noopener">code</a> are open and have been
+                            <br/>our <Link to="/architecture">architecture</Link> and <a href="https://github.com/ente-io/" target="_blank" rel="noopener">code</a> are open and have been
                             reviewed by engineers from Google,
                             Facebook, Amazon, Microsoft, Uber, ...
                         </p>
@@ -85,7 +86,7 @@ const FAQ = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+    <Footer ></Footer>
         </div>
     )
 }

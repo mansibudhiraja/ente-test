@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../../pages/Footer'
-import '../layout/bootstrap.min.css'
+import Footer from '../Footer'
+import '../../css/bootstrap.min.css'
 import "../layout/layout.css"
 
 const Layout = (props) => {

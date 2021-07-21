@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import Nav from './Nav'
+import Nav from '../components/Nav'
 import {Link} from 'gatsby'
 
 const Privacy = () => {

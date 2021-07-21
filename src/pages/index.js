@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from '../components/layout/layout'
-import Nav from './Nav'
-import Features from './features'
-import Pricing from './pricing'
+import Nav from '../components/Nav'
+import Features from '../components/features'
+import Pricing from '../components/pricing'
 
 
 const IndexPage = () => {

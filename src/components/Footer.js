@@ -10,10 +10,10 @@ const Footer = () => {
 return (
 <div>
     <div className="hue">
-      <div className={"download-section"}>
+      <div className="download-section">
         <div className="container">
-          <div id="download " className="row align-items-center ">
-            <div className="col-auto order-lg-first order-first ">
+          <div id="download" className="row align-items-center">
+            <div className="col-auto order-lg-first order-first">
                 <img className="img-fluid apps-image" src={EnteAppsImage} alt="Ente web screenshot" />
             </div>
             <div className="col-auto app-icons">

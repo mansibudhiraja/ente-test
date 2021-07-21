@@ -1,5 +1,5 @@
 import React from "react"
-import Nav from "./Nav"
+import Nav from '../components/Nav'
 import "../css/architecture.css"
 import Layout from "../components/layout/layout"
 

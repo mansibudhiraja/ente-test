@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './Nav'
+import Nav from '../components/Nav'
 import '../components/layout/layout.css'
 import {TeamDetailsLeft, TeamDetailsRight} from '../components/TeamDetails'
 import vishnu from '../images/team/vishnu.png'

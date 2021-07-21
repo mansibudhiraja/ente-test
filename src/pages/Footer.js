@@ -1,8 +1,8 @@
 import React from 'react'
-import EnteAppsImage from "../../images/apps.png"
-import AppStoreBadge from "../../images/app_store_badge.svg"
-import PlayStore from "../../images/play_store.png"
-import WebLink from "../../images/web.svg"
+import EnteAppsImage from "../images/apps.png"
+import AppStoreBadge from "../images/app_store_badge.svg"
+import PlayStore from "../images/play_store.png"
+import WebLink from "../images/web.svg"
 
 
 const Footer = () => {

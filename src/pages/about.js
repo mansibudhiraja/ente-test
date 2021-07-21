@@ -2,23 +2,21 @@ import React from 'react'
 import Nav from './Nav'
 import '../components/layout/layout.css'
 import {TeamDetailsLeft, TeamDetailsRight} from '../components/TeamDetails'
-import vishnu from '../images/team/vishnu.png'
-import neeraj from '../images/team/neeraj.png'
-import abhinav from '../images/team/abhinav.png'
-import atul from '../images/team/atul.png'
-import isneesh from '../images/team/isneesh.png'
-import pushkar from '../images/team/pushkar.png'
-import shanthy from '../images/team/shanthy.png'
-import rahul from '../images/team/rahul.png'
-import dhiraj from '../images/team/dhiraj.png'
-import Footer from '../components/Footer/Footer'
-
-
+import vishnu from '../images/team/vishnu.png';
+import neeraj from '../images/team/neeraj.png';
+import abhinav from '../images/team/abhinav.png';
+import atul from '../images/team/atul.png';
+import isneesh from '../images/team/isneesh.png';
+import pushkar from '../images/team/pushkar.png';
+import shanthy from '../images/team/shanthy.png';
+import rahul from '../images/team/rahul.png';
+import dhiraj from '../images/team/dhiraj.png';
+import Footer from './Footer'
 
 const About = () => {
-    return(
+    return (
         <div>
-            <Nav/>
+            <Nav></Nav>
             <div className="container page-title">
                 about
             </div>
@@ -116,7 +114,7 @@ const About = () => {
                                 descriptiveLine3={"investment banker, all about hodl"}/> 
                             
                             <h3 class="about-section-title">others</h3>
-                            <div style={{textAlign: "center", color: "rgb(210, 210, 210)", lineHeight: 1}}>
+                            <div style={{textAlign: "center", color: "rgb(210, 210, 210)", lineHeight: "1"}}>
                                 <p>there are many others, who have guided and helped this project come to life</p>
                                 <p>friends, family, internet strangers, ...</p>
                                 <p>and the thousands of open source contributors who built the wheels we roll on</p>

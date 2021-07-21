@@ -1,0 +1,105 @@
+.architecture-section-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.architecture-section-container {
+    font-size: 14px;
+    padding: 24px;
+    background: rgba(23, 23, 23, 0.6);
+    border-radius: 16px;
+}
+
+.architecture-section {
+    letter-spacing: 0.07;
+    color: rgb(220, 220, 220);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.architecture-section a {
+    color: rgb(240, 240, 240);
+}
+
+.architecture-section a:hover {
+    color: #66FF91;
+}
+
+.architecture-section code {
+    background-color: #2f2f2f;
+    color: rgb(225, 225, 225);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.architecture-section h1 {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-size: 28px;
+}
+
+.architecture-section h2 {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    font-size: 24px;
+}
+
+.architecture-section h3 {
+    padding-top: 4px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.architecture-section p {
+    margin-bottom: 12px;
+}
+
+.architecture-section li {
+    margin-bottom: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+    .architecture-section-wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .architecture-section-container {
+        font-size: 14px;
+        padding: 40px;
+        background: rgba(23, 23, 23, 0.6);
+        border-radius: 16px;
+    }
+
+    .architecture-section {
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 0.07;
+        color: rgb(220, 220, 220);
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .architecture-section h1 {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        font-size: 32px;
+    }
+
+    .architecture-section h2 {
+        padding-top: 24px;
+        padding-bottom: 0px;
+        font-size: 28px;
+    }
+
+    .architecture-section h3 {
+        padding-top: 16px;
+        padding-bottom: 2px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+}

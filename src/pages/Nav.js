@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from '../components/layout/layout'
 import {Link} from 'gatsby'
+import Footer from './Footer'
+
 
 
 const Nav = () => {
@@ -26,9 +28,9 @@ const Nav = () => {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item top-bar-item"><Link className="nostyle" to="/about" >about</Link></li>
-                            <li className="nav-item top-bar-item"><Link className="nostyle" to="/#download">apps</Link></li>
+                            <li className="nav-item top-bar-item"><Link className="nostyle" to="/footer-index" >apps</Link></li>
                             <li className="nav-item top-bar-item"><Link className="nostyle" to="/#pricing">pricing</Link></li>
-                            <li className="nav-item top-bar-item"><Link className="nostyle" to="./faq.html">faq</Link></li>
+                            <li className="nav-item top-bar-item"><Link className="nostyle" to="/faq">faq</Link></li>
                         </ul>
                     </div>
                 </nav>

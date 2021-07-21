@@ -3,6 +3,7 @@ import EnteAppsImage from "../images/apps.png"
 import AppStoreBadge from "../images/app_store_badge.svg"
 import PlayStore from "../images/play_store.png"
 import WebLink from "../images/web.svg"
+import {Link} from 'gatsby'
 
 
 const Footer = () => {
@@ -121,7 +122,7 @@ return (
                 About
               </div>
               <div className="footer-link">
-                  <a className="nostyle" href="./faq.html">faq</a>
+                  <Link className="nostyle" to="/faq">faq</Link>
               </div>
               <div className="footer-link">
                 <a className="nostyle" href="./privacy.html">privacy</a>

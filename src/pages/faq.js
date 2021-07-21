@@ -1,12 +1,13 @@
 import React from 'react'
 import Nav from './Nav'
-import Footer from './Footer'
 import {Link} from 'gatsby'
+import Layout from '../components/layout/layout'
 
 const FAQ = () => {
     return (
         <div>
-            <Nav></Nav>
+            <Layout>
+            <Nav/>
             <div class="container page-title">
                 frequently asked questions
             </div>
@@ -21,9 +22,9 @@ const FAQ = () => {
 
                         <h2>how is my data encrypted?</h2>
                         <p>
-                            <a href="https://libsodium.gitbook.io/doc/" target="_blank" rel="noopener">libsodium</a> implementation of <code>XChaCha20</code> is used to encrypt your data, along with
+                            <a href="https://libsodium.gitbook.io/doc/" target="_blank" rel="noopener noreferrer">libsodium</a> implementation of <code>XChaCha20</code> is used to encrypt your data, along with
                             <code> Poly1305</code> MAC for authentication.
-                            <br/>our <Link to="/architecture">architecture</Link> and <a href="https://github.com/ente-io/" target="_blank" rel="noopener">code</a> are open and have been
+                            <br/>our <Link to="/architecture">architecture</Link> and <a href="https://github.com/ente-io/" target="_blank" rel="noopener noreferrer">code</a> are open and have been
                             reviewed by engineers from Google,
                             Facebook, Amazon, Microsoft, Uber, ...
                         </p>
@@ -42,7 +43,7 @@ const FAQ = () => {
 
                         <h2>can I import my photos from else where?</h2>
                         <p>yes!
-                            <br/>our web app at&#160;<a href=" https://web.ente.io/ " target="_blank " rel="noopener ">web.ente.io</a>
+                            <br/>our web app at&#160;<a href=" https://web.ente.io/ " target="_blank " rel="noopener noreferrer ">web.ente.io</a>
                             &#160;supports resumable uploads.
                             <br/>you can just drag and drop your photos and videos and we'll encrypt and back them up forever.
                         </p>
@@ -86,7 +87,7 @@ const FAQ = () => {
                     </div>
                 </div>
             </div>
-    <Footer ></Footer>
+            </Layout>
         </div>
     )
 }

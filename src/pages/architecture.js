@@ -1,12 +1,13 @@
 import React from "react"
 import Nav from "./Nav"
 import "../css/architecture.css"
-import Footer from "./Footer"
+import Layout from "../components/layout/layout"
 
 const Architecture = () => {
   return (
     <div>
-      <Nav />
+      <Layout>
+        <Nav />
       <div className="container page-title">architecture</div>
       <div
         className="architecture-section-wrapper"
@@ -410,7 +411,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 libsodium
               </a>
@@ -421,7 +422,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_secretbox_keygen</code>
               </a>
@@ -435,7 +436,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/authenticated_encryption#key-pair-generation"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_box_keypair</code>
               </a>{" "}
@@ -448,7 +449,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/password_hashing/default_phf"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_pwhash</code>
               </a>{" "}
@@ -471,7 +472,7 @@ const Architecture = () => {
               <a
                 href="https://github.com/P-H-C/phc-winner-argon2/raw/master/argon2-specs.pdf"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Argon2 v1.3
               </a>
@@ -479,7 +480,7 @@ const Architecture = () => {
               <a
                 href="https://en.wikipedia.org/wiki/Argon2"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 one of the best hashing algorithms
               </a>
@@ -490,7 +491,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/secret-key_cryptography/secretbox"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_secretbox_easy</code>
               </a>{" "}
@@ -503,7 +504,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/advanced/stream_ciphers/xsalsa20"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 XSalsa20
               </a>{" "}
@@ -511,7 +512,7 @@ const Architecture = () => {
               <a
                 href="https://datatracker.ietf.org/doc/html/rfc8439#section-2.5"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Poly1305 MAC
               </a>{" "}
@@ -521,7 +522,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/secret-key_cryptography/secretstream"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_secretstream_*</code>
               </a>{" "}
@@ -531,7 +532,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/advanced/stream_ciphers/xchacha20"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 XChaCha20
               </a>{" "}
@@ -539,7 +540,7 @@ const Architecture = () => {
               <a
                 href="https://datatracker.ietf.org/doc/html/rfc8439#section-2.5"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Poly1305 MAC
               </a>{" "}
@@ -550,7 +551,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>crypto_box_seal</code>
               </a>{" "}
@@ -563,7 +564,7 @@ const Architecture = () => {
               <a
                 href="https://libsodium.gitbook.io/doc/generating_random_data"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <code>randombytes_buf</code>
               </a>{" "}
@@ -578,7 +579,7 @@ const Architecture = () => {
               <a
                 href="https://github.com/ente-io"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 our code
               </a>
@@ -597,7 +598,7 @@ const Architecture = () => {
                 <a
                   href="https://www.linkedin.com/in/atulaggarwal/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>
@@ -605,14 +606,14 @@ const Architecture = () => {
               </li>
               <li>
                 Chaitanya Gupta [
-                <a href="https://lisper.in/" target="_blank" rel="noopener">
+                <a href="https://lisper.in/" target="_blank" rel="noopener noreferrer">
                   Website
                 </a>{" "}
                 |{" "}
                 <a
                   href="https://www.linkedin.com/in/chaitanyagupta/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>{" "}
@@ -620,7 +621,7 @@ const Architecture = () => {
                 <a
                   href="https://twitter.com/chaitanya_gupta"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Twitter
                 </a>
@@ -628,14 +629,14 @@ const Architecture = () => {
               </li>
               <li>
                 Chandra Sekar S [
-                <a href="https://cskr.dev" target="_blank" rel="noopener">
+                <a href="https://cskr.dev" target="_blank" rel="noopener noreferrer">
                   Website
                 </a>{" "}
                 |{" "}
                 <a
                   href="https://www.linkedin.com/in/cskrdev/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>{" "}
@@ -643,7 +644,7 @@ const Architecture = () => {
                 <a
                   href="https://twitter.com/cskrdev"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Twitter
                 </a>
@@ -654,7 +655,7 @@ const Architecture = () => {
                 <a
                   href="https://www.linkedin.com/in/isneesh-marwah-89529b5/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>{" "}
@@ -662,7 +663,7 @@ const Architecture = () => {
                 <a
                   href="https://twitter.com/isneesh"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Twitter
                 </a>
@@ -673,7 +674,7 @@ const Architecture = () => {
                 <a
                   href="https://www.linkedin.com/in/ua741/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>{" "}
@@ -683,7 +684,7 @@ const Architecture = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      </Layout>
     </div>
   )
 }

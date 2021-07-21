@@ -3,9 +3,10 @@ import Footer from '../../pages/Footer'
 import '../layout/bootstrap.min.css'
 import "../layout/layout.css"
 
-const Layout = () => {
+const Layout = (props) => {
 return (
   <div>
+    {props.children}
     <Footer>
     </Footer>
   </div>

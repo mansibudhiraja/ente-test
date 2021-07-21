@@ -3,8 +3,6 @@ import Layout from '../components/layout/layout'
 import {Link} from 'gatsby'
 
 
-
-
 const Nav = () => {
     return(
         <div>

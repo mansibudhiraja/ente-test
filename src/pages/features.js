@@ -62,7 +62,7 @@ const Features = () =>{
                     <div id="feature_3" class="col feature-item">
                         <div className="feature-item-title">trusted</div>
                         <div className="feature-item-text">ente's <a className="nostyle" href="https://github.com/ente-io"
-                                target="_blank" rel="noopener" style={{textDecorationLine: "underline",
+                                target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline",
                             textDecorationStyle: "dashed"}}>apps</a> and <a className="nostyle" href="/architecture.html"
                             style={{textDecorationLine: "underline", textDecorationStyle: "dashed"}}>architecture</a> are
                             open-source

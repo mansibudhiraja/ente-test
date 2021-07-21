@@ -8,10 +8,11 @@ import Pricing from './pricing'
 const IndexPage = () => {
   return (
     <div>
-      <Nav/>
-      <Features />
-      <Pricing />
-      <Layout />
+      <Layout>
+        <Nav/>
+        <Features />
+        <Pricing />
+      </Layout>
     </div>
   )
 }

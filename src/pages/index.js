@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../components/layout/layout'
 import Nav from '../components/Nav'
 import Features from '../components/features'
-import Pricing from '../components/pricing'
+import Price from '../components/price'
 
 
 const IndexPage = () => {
@@ -11,7 +11,7 @@ const IndexPage = () => {
       <Layout>
         <Nav/>
         <Features />
-        <Pricing />
+        <Price />
       </Layout>
     </div>
   )

@@ -54,12 +54,12 @@ const Features = () =>{
                     <div className="hero-text">encrypted backups for your photos, videos and memories</div>
                     <div className="row container align-items-end sidekick-section" style={{paddingRight: "0px"}} >
                     <div className="col-auto sidekick-text align-self-center" style={{paddingRight: "0px"}} >
-                        protect your&#160;
+                        protect your &#160;
                     </div>
                     <div id="rotate" className="col-auto sidekick-main-text align-self-center">
                         <ReactTextRotator content={content} time={1500} startDelay={100} transitionTime={500} />
                     </div>
-                    <div className="col-auto sidekick-text align-self-center"> from algorithms</div>
+                    <div className="col-auto sidekick-text align-self-center">&#160; from algorithms</div>
                     <div style={{marginTop: "60px", marginBottom: "20px"}}>
                         <button onClick={handleClick} id="download-button" className="download-button" >download</button>
                     </div>

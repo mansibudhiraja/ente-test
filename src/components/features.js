@@ -5,6 +5,8 @@ import privateImg from '../images/private.svg'
 import permanent from '../images/permanent.svg'
 import open from '../images/open.svg'
 import social from '../images/social.svg'
+import ReactTextRotator from "react-text-rotator";
+import '../components/layout/layout.css'
 
 
 const Features = () =>{
@@ -35,8 +37,14 @@ const Features = () =>{
             window.location.href = "https://apps.apple.com/in/app/ente-photos/id1542026904";
         } else {
             window.location.href = "#download";
-    }
-}
+        }
+    }   
+
+    const content = [
+        {text: 'faces', className: "sidekick-main-text-faces", animation: "fade"},
+        {text: 'stories', className: "sidekick-main-text-faces", animation: "fade"},
+        {text: 'family', className: "sidekick-main-text-faces", animation: "fade"},
+        {text: 'privacy', className: "sidekick-main-text-faces", animation: "fade"}]
 
     return (
         <div>
@@ -46,15 +54,12 @@ const Features = () =>{
                     <div className="hero-text">encrypted backups for your photos, videos and memories</div>
                     <div className="row container align-items-end sidekick-section" style={{paddingRight: "0px"}} >
                     <div className="col-auto sidekick-text align-self-center" style={{paddingRight: "0px"}} >
-                        protect your
+                        protect your&#160;
                     </div>
                     <div id="rotate" className="col-auto sidekick-main-text align-self-center">
-                        <span className="sidekick-main-text-faces">faces</span>
-                        <span>stories</span>
-                        <span>family</span>
-                        <span>privacy</span>
+                        <ReactTextRotator content={content} time={1500} startDelay={100} transitionTime={500} />
                     </div>
-                    <div className="col-auto sidekick-text align-self-center">from algorithms</div>
+                    <div className="col-auto sidekick-text align-self-center"> from algorithms</div>
                     <div style={{marginTop: "60px", marginBottom: "20px"}}>
                         <button onClick={handleClick} id="download-button" className="download-button" >download</button>
                     </div>

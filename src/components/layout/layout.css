@@ -746,3 +746,4 @@ input[type=checkbox]:focus {
 .toggle:checked:after {
     transform: translatex(20px);
 }
+

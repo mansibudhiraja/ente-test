@@ -39,14 +39,12 @@ function SEO({ description, lang, meta, title }) {
                 {property: `og:description`, content: "encrypted backups for your photos"},
                 {property: `og:site_name`, content: "ente"},
                 {property: `og:site_name`, content: "ente"},
-                {property: `og:image`, content: image},
+                {property: `og:image`, content: "https://ente.io/img/preview.png"},
                 {name:"twitter:title" , content:"ente"},
                 {name:"twitter:description", content:"encrypted backups for your photos"},
                 {name:"twitter:image", content:"https://ente.io/img/preview.png"},
                 {name:"twitter:card", content:"summary_large_image"},
-                {name:"twitter:site", content:"@ente_io"},
-                {name: "twitter:image", content: image}
-               
+                {name:"twitter:site", content:"@ente_io"}
             ].concat(meta)} />
   )
   }

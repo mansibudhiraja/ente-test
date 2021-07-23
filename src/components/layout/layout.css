@@ -678,21 +678,21 @@ code {
 @font-face {
     font-family: Ubuntu;
     font-weight: 400;
-    src: url("/fonts/Ubuntu-Regular.ttf");
+    src: url("../../fonts/Ubuntu-Regular.ttf") format('ttf');
     font-display: swap;
 }
 
 @font-face {
     font-family: Ubuntu;
     font-weight: 900;
-    src: url("/fonts/Ubuntu-Bold.ttf");
+    src: url("../../fonts/Ubuntu-Bold.ttf") format('ttf');
     font-display: swap;
 }
 
 @font-face {
     font-family: Pacifico;
     font-weight: 400;
-    src: url("/fonts/Pacifico-Regular.ttf");
+    src: url("../../fonts/Pacifico-Regular.ttf") format('ttf');;
     font-display: swap;
 }
 

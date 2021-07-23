@@ -8,6 +8,36 @@ import social from '../images/social.svg'
 
 
 const Features = () =>{
+
+    const getMobileOperatingSystem = () =>{
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera
+
+        if (/windows phone/i.test(userAgent)) {
+            return "wp";
+        }
+
+        if (/android/i.test(userAgent)) {
+            return "android";
+        }
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "ios";
+        }
+
+        return "unknown";
+    }
+
+    const handleClick = () => {
+        const os = getMobileOperatingSystem();
+        if (os === "android") {
+            window.location.href = "https://play.google.com/store/apps/details?id=io.ente.photos";
+        } else if (os === "ios") {
+            window.location.href = "https://apps.apple.com/in/app/ente-photos/id1542026904";
+        } else {
+            window.location.href = "#download";
+    }
+}
+
     return (
         <div>
             <div className="container hero-section">
@@ -26,7 +56,7 @@ const Features = () =>{
                     </div>
                     <div className="col-auto sidekick-text align-self-center">from algorithms</div>
                     <div style={{marginTop: "60px", marginBottom: "20px"}}>
-                        <button id="download-button" className="download-button">download</button>
+                        <button onClick={handleClick} id="download-button" className="download-button" >download</button>
                     </div>
                     </div>
                 </div>

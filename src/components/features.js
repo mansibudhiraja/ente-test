@@ -5,7 +5,7 @@ import privateImg from '../images/private.svg'
 import permanent from '../images/permanent.svg'
 import open from '../images/open.svg'
 import social from '../images/social.svg'
-import ReactTextRotator from "react-text-rotator";
+import ReactTextRotator from "react-text-rotator"
 import '../components/layout/layout.css'
 
 

@@ -8,7 +8,7 @@ const FAQ = () => {
         <div>
             <Layout>
             <Nav/>
-            <div class="container page-title">
+            <div className="container page-title">
                 frequently asked questions
             </div>
             <div className="faq-section-wrapper" style={{fontSize: "18px !important"}}>

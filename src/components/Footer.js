@@ -50,7 +50,7 @@ return (
                             backup solution, ente delivers"</h4><br />
                         <p>chaitanya pramod<br/><br/>
                             <img src="https://play-lh.googleusercontent.com/a-/AOh14GjtRnAmE8ldGN0xMzTgAgrTy94G69vQxBtOsJRHeuk=w48-h48-n-rw"
-                                  srcset="https://play-lh.googleusercontent.com/a-/AOh14GjtRnAmE8ldGN0xMzTgAgrTy94G69vQxBtOsJRHeuk=w96-h96-n-rw 2x"
+                                  srcSet="https://play-lh.googleusercontent.com/a-/AOh14GjtRnAmE8ldGN0xMzTgAgrTy94G69vQxBtOsJRHeuk=w96-h96-n-rw 2x"
                                   className="T75of ZqMJr reviews-user-circle" alt="User review" aria-hidden="true" data-atf="true" data-iml="774840.0899999979" />
                         </p>
                       </div>
@@ -59,7 +59,7 @@ return (
                             the Google ecosystem"</h4><br />
                         <p>setal Patel<br/><br/>
                           <img src="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w48-h48-n-rw-mo"
-                                srcset="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x"
+                                srcSet="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x"
                                 className="T75of ZqMJr reviews-user-circle" aria-hidden="true" alt="User review" data-atf="true" data-iml="774840.1699999959" />
                         </p>
                       </div>
@@ -67,14 +67,14 @@ return (
                         <h4 className="review-font">"very clear UX, super smooth and privacy first alternative to google photos"</h4><br/>
                         <p>nikhil jindal<br/><br/>
                           <img src="https://play-lh.googleusercontent.com/a-/AOh14Gi7AgmmshvZ3AvOBRc9TSHqbgSqkAFmBoHN5mo8=w48-h48-n-rw"
-                                srcset="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x"
+                                srcSet="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x"
                                 className="T75of ZqMJr reviews-user-circle" aria-hidden="true" alt="User review" data-atf="true" data-iml="774840.1699999959" />
                         </p>
                       </div>
                       {/* <!-- <div className="carousel-item">
                           <h4 className="review-font">"ente (Malayalam) means mine, if you're looking for meaning in reviews. if you're looking for privacy use ente"</h4><br>
                           <p>abhijeet bisht<br><br>
-                          <img src="https://play-lh.googleusercontent.com/a-/AOh14GgN2E1BepTSKaIdrKTga_EMSZmu-Jbv-0m07wmfDQ=w48-h48-n-rw" srcset="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x" 
+                          <img src="https://play-lh.googleusercontent.com/a-/AOh14GgN2E1BepTSKaIdrKTga_EMSZmu-Jbv-0m07wmfDQ=w48-h48-n-rw" srcSet="https://play-lh.googleusercontent.com/a/AATXAJyM4_7g7Xegl14BYwVJWbgYkri4b2Q5gyhc_wE=w96-h96-n-rw-mo 2x" 
                           className="T75of ZqMJr reviews-user-circle" alt="User review" aria-hidden="true" data-atf="true" data-iml="774840.1699999959"></p>
                       </div> --></br> */}
                     </div>

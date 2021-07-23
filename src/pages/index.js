@@ -7,7 +7,7 @@ import Price from '../components/price'
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className="App">
       <Layout>
         <Nav/>
         <Features />

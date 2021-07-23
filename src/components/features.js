@@ -89,7 +89,7 @@ const Features = () =>{
                         </div>
                         <img className="feature-item-image" src={permanent} alt="permanent - preserve your data across locations" />
                     </div>
-                    <div id="feature_3" class="col feature-item">
+                    <div id="feature_3" className="col feature-item">
                         <div className="feature-item-title">trusted</div>
                         <div className="feature-item-text">ente's <a className="nostyle" href="https://github.com/ente-io"
                                 target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline",

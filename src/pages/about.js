@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import '../components/layout/layout.css'
 import {TeamDetailsLeft, TeamDetailsRight} from '../components/TeamDetails'
 import vishnu from '../images/team/vishnu.png'
@@ -17,7 +16,6 @@ const About = () => {
     return (
     <div>
         <Layout>
-        <Nav></Nav>
         <div className="container page-title">
             about
         </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import Nav from '../components/Nav'
+
 
 const Transparency = () => {
 return(
     <div>
         <Layout>
-            <Nav/>
             <div className="container page-title">
                 transparency report
             </div>

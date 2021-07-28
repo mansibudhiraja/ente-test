@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import {Link} from 'gatsby'
 import Layout from '../components/layout/layout'
 
@@ -7,7 +6,6 @@ const FAQ = () => {
     return (
         <div>
             <Layout>
-            <Nav/>
             <div className="container page-title">
                 frequently asked questions
             </div>

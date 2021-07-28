@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import Nav from '../components/Nav'
 
 const TakeDown = () => {
 return (
     <div>
         <Layout>
-            <Nav />
             <div className="container page-title">
                 takedown guidance
             </div>

@@ -1,5 +1,4 @@
 import React from "react"
-import Nav from '../components/Nav'
 import "../css/architecture.css"
 import Layout from "../components/layout/layout"
 
@@ -7,7 +6,6 @@ const Architecture = () => {
   return (
     <div>
       <Layout>
-        <Nav />
       <div className="container page-title">architecture</div>
       <div
         className="architecture-section-wrapper"

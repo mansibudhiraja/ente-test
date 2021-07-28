@@ -1,5 +1,4 @@
 import * as React from "react"
-import Nav from '../components/Nav'
 import Layout from '../components/layout/layout'
 
 
@@ -8,7 +7,6 @@ const NotFoundPage = () => {
   return (
     <div>
       <Layout>
-        <Nav />
        <div class="container page-title">
         four-oh-four
       </div>

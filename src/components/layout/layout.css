@@ -1,9 +1,9 @@
   
 body {
-    background: no-repeat top/100% url('/img/background.svg');
+    background: no-repeat top/100% url('../../images/background.svg');
     background-color: #1B1B1B;
     color: #ffffff;
-    font-family: Ubuntu, sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 svg {
@@ -87,7 +87,7 @@ svg {
 
 .sidekick-main-text {
     color: #66FF91;
-    font-family: Pacifico, sans-serif;
+    font-family: "Pacifico", sans-serif;
     font-size: 18px;
     padding: 0px;
     padding-bottom: 4px;
@@ -675,7 +675,7 @@ code {
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: Ubuntu;
     font-weight: 400;
     src: url("../../fonts/Ubuntu-Regular.ttf") format('ttf');
@@ -694,7 +694,7 @@ code {
     font-weight: 400;
     src: url("../../fonts/Pacifico-Regular.ttf") format('ttf');;
     font-display: swap;
-}
+} */
 
 .carousel-inner .carousel-item {
     transition: -webkit-transform 0.300s ease;

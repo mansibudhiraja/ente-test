@@ -13,7 +13,6 @@ function SEO({ description, lang, meta, title }) {
               description
               siteUrl
               keywords
-              image
             }
           }
         }
@@ -23,23 +22,21 @@ function SEO({ description, lang, meta, title }) {
     const keywords = site.siteMetadata.keywords
     const metaDescription = site.siteMetadata.keywords
     const defaultTitle = site.siteMetadata?.title
-    const image = site.siteMetadata.image
 
     return (
         <Helmet
             htmlAttributes={{
                 lang,
             }}
-            title={title}
+            title={defaultTitle}
             titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
             meta={[
                 {name: 'description', content: metaDescription},
-                {name: `keywords`, content: keywords},
-                {property: `og:title`, content: "ente"},
-                {property: `og:description`, content: "encrypted backups for your photos"},
-                {property: `og:site_name`, content: "ente"},
-                {property: `og:site_name`, content: "ente"},
-                {property: `og:image`, content: "https://ente.io/img/preview.png"},
+                {name: 'keywords', content: keywords},
+                {property: 'og:title', content: "ente"},
+                {property: 'og:description', content: "encrypted backups for your photos"},
+                {property: 'og:site_name', content: "ente"},
+                {property: 'og:image', content: "https://ente.io/img/preview.png"},
                 {name:"twitter:title" , content:"ente"},
                 {name:"twitter:description", content:"encrypted backups for your photos"},
                 {name:"twitter:image", content:"https://ente.io/img/preview.png"},
@@ -60,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
     image: PropTypes.string,
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
-    title: PropTypes.string.isRequired
+    title: PropTypes.string
   }
 
 export default SEO

@@ -120,7 +120,7 @@ return (
           </div>
           <div className="col">
               <div className="footer-heading">
-                About
+                about
               </div>
               <div className="footer-link">
                   <Link className="nostyle" to="/faq">faq</Link>
@@ -137,7 +137,7 @@ return (
             </div>
             <div className="col">
               <div className="footer-heading">
-                Apps
+                apps
               </div>
               <div className="footer-link">
                  <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos">android</a>

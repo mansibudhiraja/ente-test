@@ -341,7 +341,7 @@ return(
                     <hr/>
                     <br/>
                     <p style={{textAlign: "center"}}>Last updated 20 October 2020, effective 20 October 2020.</p>
-                    <p style={{textAlign: "center"}}>If you have a concern about any of these terms, please write to us at
+                    <p style={{textAlign: "center"}}>If you have a concern about any of these terms, please write to us at&#160;
                         <a href="mailto:friends@ente.io">friends@ente.io</a>.</p>
                 </div>
             </div>

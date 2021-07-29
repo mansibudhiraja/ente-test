@@ -40,11 +40,11 @@ class Price extends React.Component{
         this.fetchPrice().then(response => {
             this.setState({
                 storage0: this.convert(response[0].storage),
-                storage1: this.convert(response[1].storage),
-                storage2: this.convert(response[2].storage),
+                storage1: this.convert(response[2].storage),
+                storage2: this.convert(response[4].storage),
                 price0: response[0].price,
-                price1: response[1].price,
-                price2: response[2].price,
+                price1: response[2].price,
+                price2: response[4].price,
                 duration:response[0].period, 
                 toggle: false 
             })
@@ -57,11 +57,11 @@ class Price extends React.Component{
         this.fetchPrice().then(response => {
             this.setState({
                 storage0: this.convert(response[0].storage),
-                storage1: this.convert(response[1].storage),
-                storage2: this.convert(response[2].storage),
+                storage1: this.convert(response[2].storage),
+                storage2: this.convert(response[4].storage),
                 price0: response[0].price,
-                price1: response[1].price,
-                price2: response[2].price,
+                price1: response[2].price,
+                price2: response[4].price,
                 duration:response[0].period, 
             })
         })
@@ -69,11 +69,11 @@ class Price extends React.Component{
     else{
         this.fetchPrice().then(response => {
             this.setState({
-                storage0: this.convert(response[3].storage),
-                storage1: this.convert(response[4].storage),
+                storage0: this.convert(response[1].storage),
+                storage1: this.convert(response[3].storage),
                 storage2: this.convert(response[5].storage),
-                price0: response[3].price,
-                price1: response[4].price,
+                price0: response[1].price,
+                price1: response[3].price,
                 price2: response[5].price,
                 duration:response[3].period, 
             })

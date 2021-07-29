@@ -74,7 +74,7 @@ return (
                         <p>ente will act in response to allegations of other forms of intellectual property infringement (e.g. trade mark infringement) in broadly similar fashion as for copyright infringement, reserving to itself the same discretions, rights and
                             protections.
                         </p>
-                        <p>&quot;Takedown&quot; Notices of alleged intellectual property infringement other than copyright infringement, setting out full details similar to those required for copyright infringement &quot;takedown&quot; notices, should be sent to
+                        <p>&quot;Takedown&quot; Notices of alleged intellectual property infringement other than copyright infringement, setting out full details similar to those required for copyright infringement &quot;takedown&quot; notices, should be sent to&#160;
                             <a href="mailto:ip@ente.io">ip@ente.io</a>.</p>
                         <h2 id="civil-court-action-for-alleged-copyright-or-other-intellectual-property-infringement">Civil Court Action for Alleged Copyright or Other Intellectual Property Infringement</h2>
                         <p>Where a third party initiates court action against an ente user for alleged copyright or intellectual property infringement and wishes to access information held by ente for that purpose, the General Guidance above applies, i.e. this generally

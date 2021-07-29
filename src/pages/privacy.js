@@ -4,8 +4,7 @@ import {Link} from 'gatsby'
 
 const Privacy = () => {
 return (
-    <div>
-        <Layout>
+    <Layout>
         <div className="container page-title">
             privacy and data policy
         </div>
@@ -226,8 +225,7 @@ return (
                 </div>
             </div>
         </div>
-        </Layout>
-    </div>
+    </Layout>
 )
 }
 

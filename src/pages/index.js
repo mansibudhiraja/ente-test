@@ -6,13 +6,11 @@ import SEO from '../components/seo'
 
 const IndexPage = () => {
   return (
-    <div className="App">
       <Layout>
         <SEO/>
         <Features />
         <Price />
       </Layout>
-    </div>
   )
 }
 

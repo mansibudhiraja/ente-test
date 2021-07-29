@@ -14,7 +14,6 @@ import Layout from '../components/layout/layout'
 
 const About = () => {
     return (
-    <div>
         <Layout>
         <div className="container page-title">
             about
@@ -125,7 +124,6 @@ const About = () => {
             </div>
         </div>
     </Layout>
-    </div>
     )
 }
 

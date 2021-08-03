@@ -9,7 +9,7 @@ const Navigation = () => {
         <Container style={{paddingLeft: "0px"}} >
             <Navbar variant="dark" expand="lg" className="top-bar navbar-expand-lg">
                     <Navbar.Brand href="/">
-                        <Svg width="64px" height="20px" />
+                        <Svg width="64px" height="20" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarResponsive" className="navbar-dark" />
                     <Navbar.Collapse id="navbarResponsive" className="collapse navbar-collapse justify-content-end">

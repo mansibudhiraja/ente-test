@@ -8,6 +8,7 @@ import social from '../images/social.svg'
 import ReactTextRotator from "react-text-rotator"
 import '../components/layout/layout.css'
 import {Link} from 'gatsby'
+import FeatureDetails from './featureDetails'
 
 
 const Features = () =>{
@@ -46,6 +47,12 @@ const Features = () =>{
         {text: 'stories', className: "sidekick-main-text-faces", animation: "fade"},
         {text: 'family', className: "sidekick-main-text-faces", animation: "fade"},
         {text: 'privacy', className: "sidekick-main-text-faces", animation: "fade"}]
+    
+    const fragment = <>
+        ente's <a className="nostyle" href="https://github.com/ente-io" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline",
+            textDecorationStyle: "dashed"}}>apps</a> and <Link className="nostyle" to="/architecture"
+            style={{textDecorationLine: "underline", textDecorationStyle: "dashed"}}>architecture</Link> are open-source and peer reviewed.
+     </>;
 
     return (
         <div>
@@ -75,45 +82,40 @@ const Features = () =>{
 
             <div id="features" className="container">
                 <div className="row justify-content-md-center">
-                    <div id="feature_0" className="col feature-item">
-                        <div className="feature-item-title">simple</div>
-                        <div className="feature-item-text">ente is so simple you already know how to use it.
-                        </div>
-                        <img className="feature-item-image" src={simple} alt="simple - ente is so simple you already know how to use it" />
-                    </div>
-                    <div id="feature_1" className="col feature-item">
-                        <div className="feature-item-title">encrypted</div>
-                        <div className="feature-item-text">your photos on ente are end-to-end encrypted and only you can access
-                            them.
-                        </div>
-                        <img className="feature-item-image" src={privateImg} alt="private - your photos on ente are end-to-end encrypted and only you can access them" />
-                    </div>
-                    <div id="feature_2" className="col feature-item">
-                        <div className="feature-item-title">reliable</div>
-                        <div className="feature-item-text">ente preserves your data across locations, including an underground
-                            fallout shelter.
-                        </div>
-                        <img className="feature-item-image" src={permanent} alt="permanent - preserve your data across locations" />
-                    </div>
-                    <div id="feature_3" className="col feature-item">
-                        <div className="feature-item-title">trusted</div>
-                        <div className="feature-item-text">ente's <a className="nostyle" href="https://github.com/ente-io"
-                                target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline",
-                            textDecorationStyle: "dashed"}}>apps</a> and <Link className="nostyle" to="/architecture"
-                            style={{textDecorationLine: "underline", textDecorationStyle: "dashed"}}>architecture</Link> are
-                            open-source
-                            and peer reviewed.
-                        </div>
-                        <img className="feature-item-image" src={open} alt="open source and peer reviewed" />
-                    </div>
-                    <div id="feature_4" className="col feature-item feature-item-last">
-                        <div className="feature-item-title">social</div>
-                        <div className="feature-item-text">ente lets you share your albums with your loved ones, end-to-end
-                            encrypted.
-                        </div>
-                        <img className="feature-item-image" src={social}
-                            alt="social - share your albums, end-to-end encrypted" />
-                    </div>
+                    <FeatureDetails id="feature_0" 
+                            title={"simple"}
+                            text={"ente is so simple you already know how to use it."}
+                            src={simple} 
+                            alt={"simple - ente is so simple you already know how to use it"} >
+                    </FeatureDetails>
+
+                    <FeatureDetails id="feature_1" 
+                            title={"encrypted"}
+                            text={"your photos on ente are end-to-end encrypted and only you can access them."}
+                            src={privateImg} 
+                            alt={"private - your photos on ente are end-to-end encrypted and only you can access them"} >
+                    </FeatureDetails>
+
+                    <FeatureDetails id="feature_2" 
+                            title={"reliable"}
+                            text={"ente preserves your data across locations, including an underground fallout shelter."}
+                            src={permanent} 
+                            alt={"permanent - preserve your data across locations"} >
+                    </FeatureDetails>
+
+                    <FeatureDetails id="feature_3" 
+                            title={"trusted"}
+                            text={fragment}
+                            src={open} 
+                            alt={"permanent - preserve your data across locations"} >
+                    </FeatureDetails>
+
+                    <FeatureDetails id="feature_4" 
+                            title={"social"}
+                            text={"ente lets you share your albums with your loved ones, end-to-end encrypted."}
+                            src={social} 
+                            alt={"social - share your albums, end-to-end encrypted"} >
+                    </FeatureDetails>
                 </div>
             </div>
         </div>

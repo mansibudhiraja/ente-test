@@ -17,6 +17,7 @@
   "dependencies": {
     "@fontsource/pacifico": "^4.5.0",
     "@fontsource/ubuntu": "^4.5.0",
+    "bootstrap": "^5.0.2",
     "gatsby": "^3.9.1",
     "gatsby-plugin-gatsby-cloud": "^2.9.1",
     "gatsby-plugin-image": "^1.10.0",
@@ -30,6 +31,7 @@
     "netlify-cms-app": "^2.15.27",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-text-rotator": "^1.1.0"

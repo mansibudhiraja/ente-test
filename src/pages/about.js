@@ -15,7 +15,6 @@ import {Link} from 'gatsby'
 
 const About = () => {
     return (
-    <div>
         <Layout>
         <div className="container page-title">
             about
@@ -126,7 +125,6 @@ const About = () => {
             </div>
         </div>
     </Layout>
-    </div>
     )
 }
 

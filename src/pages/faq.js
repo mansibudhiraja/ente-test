@@ -4,7 +4,6 @@ import Layout from '../components/layout/layout'
 
 const FAQ = () => {
     return (
-        <div>
             <Layout>
             <div className="container page-title">
                 frequently asked questions
@@ -86,7 +85,6 @@ const FAQ = () => {
                 </div>
             </div>
             </Layout>
-        </div>
     )
 }
 

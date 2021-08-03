@@ -11,6 +11,7 @@ import shanthy from '../images/team/shanthy.png'
 import rahul from '../images/team/rahul.png'
 import dhiraj from '../images/team/dhiraj.png'
 import Layout from '../components/layout/layout'
+import {Link} from 'gatsby'
 
 const About = () => {
     return (
@@ -45,12 +46,12 @@ const About = () => {
                                 the present
                         </div>
                         <div className="about-section-contents">
-                                <p style={{marginBottom: "4px"}}>we have built apps across platforms that leverage a
+                                <p style={{marginBottom: "4px"}}>we have built apps across platforms that leverage a&#160;
                                     <a className="nostyle" href="https://en.wikipedia.org/wiki/Salsa20#ChaCha20_adoption" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline"}}>widely adopted encryption scheme</a> to securely encrypt all your memories.
                                 </p>
                                 <p style={{marginBottom: "4px"}}>they are preserved at multiple storage locations, and only you can decrypt them.</p>
                                 <p style={{marginBottom: "4px"}}>Our&#160;
-                                    <a className="nostyle" href="https://ente.io/encryption" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline"}}>architecture</a> and&#160;
+                                    <Link className="nostyle" to="/architecture" style={{textDecorationLine: "underline"}}>architecture</Link> and&#160;
                                     <a className="nostyle" href="https://github.com/ente-io" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline"}}>apps</a> have been reviewed by engineers from Google, Facebook, Amazon, Microsoft, Uber, ...
                                 </p>
                         </div>

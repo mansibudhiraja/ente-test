@@ -676,7 +676,10 @@ const Architecture = () => {
                 >
                   LinkedIn
                 </a>{" "}
-                | <a href="https://twitter.com/ua741">Twitter</a>]
+                | <a href="https://twitter.com/ua741" 
+                target="_blank"
+                rel="noopener noreferrer">
+                  Twitter</a>]
               </li>
             </ul>
           </div>

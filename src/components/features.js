@@ -7,6 +7,7 @@ import open from '../images/open.svg'
 import social from '../images/social.svg'
 import ReactTextRotator from "react-text-rotator"
 import '../components/layout/layout.css'
+import {Link} from 'gatsby'
 
 
 const Features = () =>{
@@ -98,8 +99,8 @@ const Features = () =>{
                         <div className="feature-item-title">trusted</div>
                         <div className="feature-item-text">ente's <a className="nostyle" href="https://github.com/ente-io"
                                 target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline",
-                            textDecorationStyle: "dashed"}}>apps</a> and <a className="nostyle" href="/architecture.html"
-                            style={{textDecorationLine: "underline", textDecorationStyle: "dashed"}}>architecture</a> are
+                            textDecorationStyle: "dashed"}}>apps</a> and <Link className="nostyle" to="/architecture"
+                            style={{textDecorationLine: "underline", textDecorationStyle: "dashed"}}>architecture</Link> are
                             open-source
                             and peer reviewed.
                         </div>

@@ -34,7 +34,7 @@ const FAQ = () => {
                         <h2>how does sharing of albums work?</h2>
                         <p>the information required to decrypt albums is encrypted with the recipient's public key such that
                             only they can view them.<br /> you can read more about our architecture&#160;
-                            <a href="/architecture.html">here</a>.
+                            <Link to="/architecture">here</Link>.
                             <br />please note that only users on the paid plan are allowed to share albums. the receiver just
                             needs an ente account, and can be on the free plan.
                         </p>

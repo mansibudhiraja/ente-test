@@ -5,6 +5,17 @@ import PlayStore from "../images/play_store.png"
 import WebLink from "../images/web.svg"
 import {Link} from 'gatsby'
 import Svg from './Svg'
+import styled from 'styled-components'
+
+const Address = styled.div`
+    font-size: 14px;
+`;
+
+const EnteLogo = styled.div`
+    margin-right: 40px;
+    min-width: 300px;
+    color: #66FF91;
+`;
 
 const Footer = () => {
 return (
@@ -103,12 +114,12 @@ return (
     </div>
     <div className="container footer-section">
       <div className="row">
-          <div className="col" style={{marginRight: "40px", minWidth: "300px", color: "#66FF91"}} >
+          <EnteLogo className="col">
           <Svg width="64px" height="20" />
             <div className="app-description">
                 ente is a cloud based mobile and desktop photo storage app with a focus on security and privacy.
             </div>        
-          </div>
+          </EnteLogo>
           <div className="col">
               <div className="footer-heading">
                 about
@@ -158,9 +169,9 @@ return (
               <div className="footer-link">
                  <a className="nostyle" href="mailto:contact@ente.io">contact@ente.io</a>
                  <div className="grey-separator"></div>
-                 <div style={{fontSize: 14}}>H1304, PFS, Old Airport Road, Bengaluru, India</div>
+                 <Address>H1304, PFS, Old Airport Road, Bengaluru, India</Address>
                  <div className="grey-separator"></div>
-                 <div style={{fontSize: 14}} >Denemarkenstraat 90, 2034 AD, Haarlem, Netherlands</div>
+                 <Address >Denemarkenstraat 90, 2034 AD, Haarlem, Netherlands</Address>
               </div>
             </div>
         </div>

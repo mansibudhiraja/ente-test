@@ -24,7 +24,6 @@ class Price extends React.Component{
             const response = await fetch("https://api.ente.io/billing/plans/v2")
             if(response.ok){
                 const jsonResponse = await response.json()
-                console.log(jsonResponse.plans)
                 return jsonResponse.plans
             }
         } catch (error) {

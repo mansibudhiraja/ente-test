@@ -33,7 +33,7 @@ const TeamDetailsRight = (props) =>{
                     </div>
                 </div>
                 <div className="col-auto order-lg-last order-first">
-                    <img className="img-fluid team-member-avatar" src={props.src} alt={props.alt} />
+                    <img className="img-fluid team-member-avatar" src={props.src} />
                 </div>
             </div>
         </div>

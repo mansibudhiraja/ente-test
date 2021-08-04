@@ -12,6 +12,62 @@ import rahul from '../images/team/rahul.png'
 import dhiraj from '../images/team/dhiraj.png'
 import Layout from '../components/layout/layout'
 import {Link} from 'gatsby'
+import styled from 'styled-components'
+
+const AboutSectionwWrapper = styled.div`
+    padding-left: 24px;
+    padding-right: 24px;
+    @media only screen and (min-width: 768px) {
+        padding: 0px;
+    }
+`;
+
+const AboutSectionContainer = styled.div`
+    font-size: 14px;
+    padding: 0px;
+    background: rgba(23, 23, 23, 0.6);
+    border-radius: 16px;
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+        padding: 0px;
+        background: rgba(23, 23, 23, 0.6);
+        border-radius: 16px;
+    }
+`;
+
+const AboutSection = styled.div`
+    padding: 20px;
+    line-height: 136%;
+    letter-spacing: 0.07;
+    @media only screen and (min-width: 768px) {
+        padding: 60px;
+        line-height: 140%;
+        letter-spacing: 0.07;
+    }
+`;
+
+
+
+const AboutSectionHeading = styled.div`
+    font-size: 18px;
+    padding-bottom: 6px;
+    padding-top: 22px;
+    @media only screen and (min-width: 768px) {
+        font-size: 26px;
+        padding-bottom: 12px;
+        padding-top: 16px;
+    }
+`;
+
+const AboutSectionContents = styled.div`
+    color: rgb(210, 210, 210);
+    margin-bottom: 4px;
+    @media only screen and (min-width: 768px) {}
+`;
+
+const AboutMarginBottom = styled.p`
+    margin-bottom: 4px;
+`;
 
 const About = () => {
     return (
@@ -19,50 +75,50 @@ const About = () => {
         <div className="container page-title">
             about
         </div>
-        <div className="about-section-wrapper">
-            <div className="about-section-container container">
-                <div className="about-section">
+        <AboutSectionwWrapper>
+            <AboutSectionContainer className="container">
+                <AboutSection>
                     <div className="about-section-item" style={{paddingTop: "0px"}} >
-                        <div className="about-section-heading" style={{paddingTop: "0px"}}>
+                        <AboutSectionHeading style={{paddingTop: "0px"}}>
                             prelude
-                        </div>
-                        <div className="about-section-contents">
-                            <p style={{marginBottom: "4px"}}>we collectively take over a trillion photos every year.</p>
-                            <p style={{marginBottom: "4px"}}>these pictures speak a thousand words to the algorithms that index them.</p>
-                        </div>
+                        </AboutSectionHeading>
+                        <AboutSectionContents>
+                            <AboutMarginBottom>we collectively take over a trillion photos every year.</AboutMarginBottom>
+                            <AboutMarginBottom>these pictures speak a thousand words to the algorithms that index them.</AboutMarginBottom>
+                        </AboutSectionContents>
                     </div>
                     <div className="about-section-item" >
-                        <div className="about-section-heading">
+                        <AboutSectionHeading>
                                 our story
-                        </div>
-                        <div className="about-section-contents">
-                                <p style={{marginBottom: "4px"}}>ente was born out of a need for a simple, reliable archival solution for personal photos and videos, that is end-to-end encrypted.</p>
-                                <p style={{marginBottom: "4px"}}>there was nothing out there that ticked all the boxes, so we started building one.</p>
-                        </div>
+                        </AboutSectionHeading>
+                        <AboutSectionContents>
+                                <AboutMarginBottom>ente was born out of a need for a simple, reliable archival solution for personal photos and videos, that is end-to-end encrypted.</AboutMarginBottom>
+                                <AboutMarginBottom>there was nothing out there that ticked all the boxes, so we started building one.</AboutMarginBottom>
+                        </AboutSectionContents>
                     </div>
                     <div className="about-section-item" >
-                        <div className="about-section-heading">
+                        <AboutSectionHeading>
                                 the present
-                        </div>
-                        <div className="about-section-contents">
-                                <p style={{marginBottom: "4px"}}>we have built apps across platforms that leverage a&#160;
+                        </AboutSectionHeading>
+                        <AboutSectionContents>
+                                <AboutMarginBottom>we have built apps across platforms that leverage a&#160;
                                     <a className="nostyle" href="https://en.wikipedia.org/wiki/Salsa20#ChaCha20_adoption" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline"}}>widely adopted encryption scheme</a> to securely encrypt all your memories.
-                                </p>
-                                <p style={{marginBottom: "4px"}}>they are preserved at multiple storage locations, and only you can decrypt them.</p>
-                                <p style={{marginBottom: "4px"}}>Our&#160;
+                                </AboutMarginBottom>
+                                <AboutMarginBottom>they are preserved at multiple storage locations, and only you can decrypt them.</AboutMarginBottom>
+                                <AboutMarginBottom>Our&#160;
                                     <Link className="nostyle" to="/architecture" style={{textDecorationLine: "underline"}}>architecture</Link> and&#160;
                                     <a className="nostyle" href="https://github.com/ente-io" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "underline"}}>apps</a> have been reviewed by engineers from Google, Facebook, Amazon, Microsoft, Uber, ...
-                                </p>
-                        </div>
-                        <p style={{marginBottom: "4px"}}>we are self-funded and profitable.</p>
+                                </AboutMarginBottom>
+                                <AboutMarginBottom>we are self-funded and profitable.</AboutMarginBottom>
+                        </AboutSectionContents>   
                     </div>
                     <div className="about-section-item" >
-                        <div className="about-section-heading">
+                        <AboutSectionHeading>
                                 the future
-                        </div>
-                        <div className="about-section-contents">
+                        </AboutSectionHeading>
+                        <AboutSectionContents>
                                 we will continue to enrich the product to spread delight.
-                        </div>
+                        </AboutSectionContents>
 
                         <div className="team-heading">team</div>
                         <TeamDetailsLeft src={vishnu} name={"vishnu"}
@@ -121,9 +177,9 @@ const About = () => {
                             <p>❤️</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </AboutSection>
+            </AboutSectionContainer>
+        </AboutSectionwWrapper>
     </Layout>
     )
 }

@@ -238,23 +238,6 @@ svg {
     font-weight: 900;
 }
 
-.about-section-wrapper {
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.about-section-container {
-    font-size: 14px;
-    padding: 0px;
-    background: rgba(23, 23, 23, 0.6);
-    border-radius: 16px;
-}
-
-.about-section {
-    padding: 20px;
-    line-height: 136%;
-    letter-spacing: 0.07;
-}
 
 .about-section-title {
     text-align: center;
@@ -392,16 +375,6 @@ code {
     color: white;
 }
 
-.about-section-heading {
-    font-size: 18px;
-    padding-bottom: 6px;
-    padding-top: 22px;
-}
-
-.about-section-contents {
-    color: rgb(210, 210, 210);
-    margin-bottom: 4px;
-}
 
 .team-member-description {
     color: rgb(142, 142, 142);
@@ -537,9 +510,7 @@ code {
     .review-font {
         font-size: 22px;
     }
-    .about-section-wrapper {
-        padding: 0px;
-    }
+   
     .page-title {
         margin-top: 80px;
         margin-bottom: 40px;
@@ -547,22 +518,7 @@ code {
         font-size: 36px;
         text-align: center;
     }
-    .about-section {
-        padding: 60px;
-        line-height: 140%;
-        letter-spacing: 0.07;
-    }
-    .about-section-heading {
-        font-size: 26px;
-        padding-bottom: 12px;
-        padding-top: 16px;
-    }
-    .about-section-container {
-        font-size: 18px;
-        padding: 0px;
-        background: rgba(23, 23, 23, 0.6);
-        border-radius: 16px;
-    }
+
     .about-section-title {
         text-align: center;
         padding-top: 140px;
@@ -570,9 +526,11 @@ code {
         font-size: 28px;
         font-weight: 900;
     }
+
     .about-section-item {
         padding-top: 30px;
     }
+
     .team-heading {
         text-align: center;
         padding-top: 140px;
@@ -614,8 +572,7 @@ code {
         color: rgb(220, 220, 220);
         font-size: 16px;
     }
-    /* Added in Faq.js
-     .faq-section {
+    /* Added in Faq.js .faq-section {
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 40px;

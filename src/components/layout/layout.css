@@ -450,55 +450,6 @@ code {
     color: #66FF91;
 }
 
-.faq-section-wrapper {
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.faq-section-container {
-    font-size: 14px;
-    padding: 0px;
-    background: rgba(23, 23, 23, 0.6);
-    border-radius: 16px;
-}
-
-.faq-section {
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    line-height: 136%;
-    letter-spacing: 0.07;
-    color: rgb(220, 220, 220);
-    font-size: 16px;
-}
-
-.faq-section h2 {
-    padding-top: 20px;
-    padding-bottom: 4px;
-    color: rgb(238, 238, 238);
-    font-size: 26px;
-}
-
-.faq-section h3 {
-    padding-top: 16px;
-    color: rgb(238, 238, 238);
-    font-size: 24px;
-}
-
-.faq-section p {
-    font-size: 18px;
-    color: rgb(200, 200, 200);
-    line-height: 1.6;
-}
-
-.faq-section a {
-    color: inherit;
-}
-
-.faq-section a:hover {
-    color: #66FF91;
-}
 
 @media only screen and (min-width: 768px) {
     .logo {
@@ -663,7 +614,8 @@ code {
         color: rgb(220, 220, 220);
         font-size: 16px;
     }
-    .faq-section {
+    /* Added in Faq.js
+     .faq-section {
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 40px;
@@ -672,7 +624,7 @@ code {
         letter-spacing: 0.07;
         color: rgb(220, 220, 220);
         font-size: 16px;
-    }
+    } */
 }
 
 /* @font-face {

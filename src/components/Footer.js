@@ -18,15 +18,15 @@ return (
             </div>
             <div className="col-auto app-icons">
               <div>
-                <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos" rel="noreferrer noopener">
+                <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos" target="_blank" rel="noreferrer noopener">
                   <img src={PlayStore} alt="ente - play store" style={{width: "197px"}}/></a>
               </div>
               <div className="app-link">
-                <a className="nostyle" href="https://apps.apple.com/in/app/ente-photos/id1542026904 " rel="noreferrer noopener">
+                <a className="nostyle" href="https://apps.apple.com/in/app/ente-photos/id1542026904 "  target="_blank" rel="noreferrer noopener">
                   <img src={AppStoreBadge} style={{width: "197px", height: "67px"}} alt="ente - ios app store" /></a>
               </div>
               <div className="app-link">
-                <a className="nostyle" href="https://web.ente.io" rel="noreferrer noopener">
+                <a className="nostyle" href="https://web.ente.io" target="_blank" rel="noreferrer noopener">
                   <img src={WebLink} alt="ente - web-app link" /></a>
               </div>
             </div>
@@ -131,13 +131,13 @@ return (
                 apps
               </div>
               <div className="footer-link">
-                 <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos" rel="noreferrer noopener">android</a>
+                 <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos" target="_blank" rel="noreferrer noopener">android</a>
               </div>
               <div className="footer-link">
-                <a className="nostyle" href="https://apps.apple.com/in/app/ente-photos/id1542026904" rel="noreferrer noopener">ios</a>
+                <a className="nostyle" href="https://apps.apple.com/in/app/ente-photos/id1542026904" target="_blank" rel="noreferrer noopener">ios</a>
               </div>
               <div className="footer-link ">
-                <a className="nostyle " href="https://web.ente.io" rel="noreferrer noopener">web</a>
+                <a className="nostyle " href="https://web.ente.io" target="_blank" rel="noreferrer noopener">web</a>
               </div>
             </div>
             <div className="col">
@@ -145,10 +145,10 @@ return (
                   source code
               </div>
               <div className="footer-link">
-                 <a className="nostyle" href="https://github.com/ente-io/frame" rel="noreferrer noopener">mobile</a>
+                 <a className="nostyle" href="https://github.com/ente-io/frame" target="_blank" rel="noreferrer noopener">mobile</a>
               </div>
               <div className="footer-link">
-                <a className="nostyle" href="https://github.com/ente-io/bada-frame" rel="noreferrer noopener">desktop</a>
+                <a className="nostyle" href="https://github.com/ente-io/bada-frame" target="_blank" rel="noreferrer noopener">desktop</a>
               </div>
             </div>
             <div className="col">

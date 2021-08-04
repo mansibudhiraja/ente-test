@@ -142,7 +142,7 @@ return(
                     <p>18.5. a statement that the information in the notification is accurate, and, under penalty of perjury (unless applicable law says otherwise), that you are authorised to act on behalf of the copyright owner.</p>
                     <ol start="19">
                         <li>We reserve the right to remove data alleged to be infringing without prior notice, at our sole discretion, and without liability to you. In appropriate circumstances, we will also terminate your account if we consider you to be a repeat
-                            infringer. Details of our designated copyright agent for notice of alleged copyright infringement are on our <a href="https://ente.io/contact">contacts page</a>.</li>
+                            infringer. Details of our designated copyright agent for notice of alleged copyright infringement are on our <a href="https://ente.io/contact" target="_blank" rel="noreferrer noopener">contacts page</a>.</li>
                     </ol>
                     <h2 id="copyright-counter-notices">Copyright Counter-Notices</h2>
                     <ol start="20">
@@ -196,7 +196,7 @@ return(
                     </ol>
                     <h2 id="other-infringement-notices">Other Infringement Notices</h2>
                     <ol start="28">
-                        <li>If you consider there has been some other infringement or breach of law, or of these terms, and wish to file a complaint, contact us at the relevant address on our <a href="https://ente.io/contact">contacts</a> page. We will generally
+                        <li>If you consider there has been some other infringement or breach of law, or of these terms, and wish to file a complaint, contact us at the relevant address on our <a href="https://ente.io/contact" target="_blank" rel="noreferrer noopener">contacts</a> page. We will generally
                             require the same amount of detail as set out above for copyright infringement notices. See also our <Link to="/takedown">Takedown Guidance Policy</Link>.</li>
                     </ol>
                     <h2 id="suspension-and-termination">Suspension and Termination</h2>

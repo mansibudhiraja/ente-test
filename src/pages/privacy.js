@@ -55,7 +55,7 @@ return (
                         After account termination, all Your Files will be marked for deletion and removed when the next appropriate file purging process is run, subject to any retention specifically allowed under this Policy or our <Link to='/terms'>ToS</Link>.</p>
                     <p>5.8 The deletion process specified in 5.7 will not apply to a de-duplicated file that is associated with another user (see our <Link to='/terms'>ToS</Link>). </p>
                     <p>5.9 We may, but shall not be obliged to, keep Your Files after your account has been suspended or terminated. In particular, we may, but shall not be obliged to, keep Your Files where we consider it necessary for evidential purposes relating
-                        to a breach of our <a href="https://mega.nz/terms" rel="noreferrer noopener">ToS</a> or with respect to current or anticipated action by any competent enforcement authority or other third party. With respect to release of Your Files to competent enforcement
+                        to a breach of our <a href="https://mega.nz/terms" target="_blank" rel="noreferrer noopener">ToS</a> or with respect to current or anticipated action by any competent enforcement authority or other third party. With respect to release of Your Files to competent enforcement
                         authorities and third parties, see our <Link to="/takedown">Takedown Guidance Policy</Link>.</p>
                     <p>5.10 See also the General Terms section of this Policy which applies to all types of data, including Your Files.</p>
 
@@ -85,7 +85,7 @@ return (
                         <li>IP address with each API call to determine the data center closest to you and to detect patterns within possible DDoS attacks.</li>
                         <li>User agent information with each API call to understand which of our versions of our apps are being used and on what devices.</li>
                     </ul>
-                    <p>6.4 From time to time we may need to communicate with each other directly. We will use the email address you have verified in your account. You can communicate with us using the appropriate address on our <a href="https://ente.io/contact" rel="noreferrer noopener">contacts page</a>.
+                    <p>6.4 From time to time we may need to communicate with each other directly. We will use the email address you have verified in your account. You can communicate with us using the appropriate address on our <a href="https://ente.io/contact" target="_blank" rel="noreferrer noopener">contacts page</a>.
                         Examples of direct communications include invoices, copyright or other enforcement emails, notifications under our <Link to="/takedown">Takedown Guidance Policy</Link>, system update information, data breach notifications,
                         notification of major changes to our <Link to='/terms'>ToS</Link> or this Policy.</p>
                     <p>6.5 Access to your account and files is by way of nominated email address and password. It is your responsibility to keep these safe and secure as ente stores the email address but does not store the password. If you forget your password
@@ -104,7 +104,7 @@ return (
                     <p>6.10 See also the General Terms section of this Policy which applies to all types of data, including Account Data.</p>
                     <h2 id="website-usage-data">Website Usage Data</h2>
                     <p>7. This is the section of this Policy that covers activity on our website (“Website Usage Data”). The following specific terms apply:</p>
-                    <p>7.1 We use a privacy focussed third-party analytics service to monitor the metrics of our website. You can read their privacy policy here: <a href="https://simpleanalytics.com/privacy" rel="noreferrer noopener">https://simpleanalytics.com/privacy</a></p>
+                    <p>7.1 We use a privacy focussed third-party analytics service to monitor the metrics of our website. You can read their privacy policy here: <a href="https://simpleanalytics.com/privacy" target="_blank" rel="noreferrer noopener">https://simpleanalytics.com/privacy</a></p>
                     <p>7.2 See also the General Terms section of this Policy which applies to all types of data, including Website Usage Data.</p>
                     <h2 id="general-terms">General Terms</h2>
                     <ol start="8">
@@ -143,21 +143,21 @@ return (
                         by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council that help ensure the secure handling of payment information.</p>
                     <p>The Privacy Policies of the payment processors we work with can be accessed below:</p>
                     <ul>
-                        <li>Apple: <a href="https://www.apple.com/legal/privacy/" rel="noreferrer noopener">https://www.apple.com/legal/privacy</a></li>
-                        <li>Google: <a href="https://policies.google.com/privacy" rel="noreferrer noopener">https://policies.google.com/privacy</a></li>
-                        <li>Stripe: <a href="https://stripe.com/privacy" rel="noreferrer noopener">https://stripe.com/privacy</a></li>
+                        <li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noreferrer noopener">https://www.apple.com/legal/privacy</a></li>
+                        <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer noopener">https://policies.google.com/privacy</a></li>
+                        <li>Stripe: <a href="https://stripe.com/privacy" target="_blank" rel="noreferrer noopener">https://stripe.com/privacy</a></li>
                     </ul>
                     <p>13.2. <strong>Support Chat</strong></p>
-                    <p>We use Crisp to power our support chat interface. You can find their privacy policy here: <a href="https://crisp.chat/privacy" rel="noreferrer noopener">https://crisp.chat/privacy</a>.</p>
+                    <p>We use Crisp to power our support chat interface. You can find their privacy policy here: <a href="https://crisp.chat/privacy" target="_blank" rel="noreferrer noopener">https://crisp.chat/privacy</a>.</p>
                     <p>13.3. <strong>Feedback Collection</strong></p>
-                    <p>We use FeatureMonkey to collect feedback from users and to decide what features we should be working on. You can find their privacy policy here: <a href="https://www.featuremonkey.com/privacy/" rel="noreferrer noopener">https://www.featuremonkey.com/privacy</a>.</p>
+                    <p>We use FeatureMonkey to collect feedback from users and to decide what features we should be working on. You can find their privacy policy here: <a href="https://www.featuremonkey.com/privacy/" target="_blank" rel="noreferrer noopener">https://www.featuremonkey.com/privacy</a>.</p>
                     <p>13.4. <strong>Website Analytics</strong></p>
-                    <p>We use a privacy focused third-party analytics service to monitor the metrics of our website. You can read their privacy policy here: <a href="https://simpleanalytics.com/privacy" rel="noreferrer noopener">https://simpleanalytics.com/privacy</a></p>
+                    <p>We use a privacy focused third-party analytics service to monitor the metrics of our website. You can read their privacy policy here: <a href="https://simpleanalytics.com/privacy" target="_blank" rel="noreferrer noopener">https://simpleanalytics.com/privacy</a></p>
                     <p>13.5. <strong>Backend Analytics</strong></p>
-                    <p>We use Amplitude for analyzing API access patterns. The data that is pushed to them is obfuscated and does not include a user's personal information (like name or email). You can read their privacy policy here: <a href="https://amplitude.com/privacy" rel="noreferrer noopener">https://amplitude.com/privacy</a>.
+                    <p>We use Amplitude for analyzing API access patterns. The data that is pushed to them is obfuscated and does not include a user's personal information (like name or email). You can read their privacy policy here: <a href="https://amplitude.com/privacy" target="_blank" rel="noreferrer noopener">https://amplitude.com/privacy</a>.
                     </p>
                     <p>13.6. <strong>Transactional Emails</strong></p>
-                    <p>We use Zoho for sending out emails like login tokens, billing reminders, notification when an album is shared with you, etc. You can read their privacy policy here: <a href="https://zoho.com/privacy" rel="noreferrer noopener">https://zoho.com/privacy</a>.
+                    <p>We use Zoho for sending out emails like login tokens, billing reminders, notification when an album is shared with you, etc. You can read their privacy policy here: <a href="https://zoho.com/privacy" target="_blank" rel="noreferrer noopener">https://zoho.com/privacy</a>.
                     </p>
                     <h3 id="no-ads">No Ads</h3>
                     <ol start="14">
@@ -206,10 +206,10 @@ return (
                     <ol start="22">
                         <li>
                             <p>Questions and comments regarding this Policy are welcomed and should be addressed to the Privacy Officer at privacy@ente.io. For a comprehensive list of contact details for Drizzle Technologies Private Limited, and each of our
-                                related or affiliated entities and payment processors, together with details of how to contact our privacy officer and data protection officer, see our <a href="https://ente.io/contact" rel="noreferrer noopener">contacts</a> page.</p>
+                                related or affiliated entities and payment processors, together with details of how to contact our privacy officer and data protection officer, see our <a href="https://ente.io/contact" target="_blank" rel="noreferrer noopener">contacts</a> page.</p>
                         </li>
                         <li>
-                            <p>If you are in Europe or otherwise have the right to lodge a complaint with a supervisory authority, you can find contact details for our European Representative and European supervisory authority on our <a href="https://ente.io/contact" rel="noreferrer noopener">contacts</a>                            page.</p>
+                            <p>If you are in Europe or otherwise have the right to lodge a complaint with a supervisory authority, you can find contact details for our European Representative and European supervisory authority on our <a href="https://ente.io/contact" target="_blank" rel="noreferrer noopener">contacts</a>                            page.</p>
                         </li>
                     </ol>
                     <h3 id="changes-to-our-policy">Changes to our Policy</h3>

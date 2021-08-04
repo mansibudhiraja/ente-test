@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Footer'
 import Navigation from '../Navigation'
-import '../../css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../layout/layout.css"
 import "@fontsource/pacifico"
 import "@fontsource/ubuntu/400.css"

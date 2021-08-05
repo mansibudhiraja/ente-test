@@ -5,7 +5,7 @@ const TeamDetailsLeft = (props) =>{
         <div>
             <div className="row align-items-center justify-content-center team-member team-member-left">
                 <div className="col-auto">
-                    <img className="img-fluid team-member-avatar" src={props.src} alt={props.alt} />
+                    <img className="img-fluid team-member-avatar" src={props.src} alt={props.name} />
                 </div>
                 <div className="col-lg team-member-content-left">
                     <div className="team-member-name">{props.name}</div>
@@ -33,7 +33,7 @@ const TeamDetailsRight = (props) =>{
                     </div>
                 </div>
                 <div className="col-auto order-lg-last order-first">
-                    <img className="img-fluid team-member-avatar" src={props.src} />
+                    <img className="img-fluid team-member-avatar" src={props.src} alt={props.name} />
                 </div>
             </div>
         </div>

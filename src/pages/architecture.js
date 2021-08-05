@@ -1,693 +1,796 @@
 import React from "react"
-import "../css/architecture.css"
 import Layout from "../components/layout/layout"
+import styled from 'styled-components'
+
+const ArchitectureSectionWrapper = styled.div`
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: "18px !important";
+  @media only screen and (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+`;
+
+const ArchitectureSectionContainer = styled.div`
+  font-size: 14px;
+  padding: 24px;
+  background: rgba(23, 23, 23, 0.6);
+  border-radius: 16px;
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+    padding: 40px;
+    background: rgba(23, 23, 23, 0.6);
+    border-radius: 16px;
+  }
+`;
+
+const ArchitectureSection = styled.div`
+  letter-spacing: 0.07;
+  color: rgb(220, 220, 220);
+  font-size: 18px;
+  line-height: 1.4;
+  @media only screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 0.07;
+    color: rgb(220, 220, 220);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+`;
+
+const ArchitectureSectionLink = styled.a`
+  color: rgb(240, 240, 240);
+  &:hover {
+    color: #66FF91;
+  }
+  @media only screen and (min-width: 768px) {}
+`;
+
+
+const ArchitectureSectionCode = styled.code`
+  background-color: #2f2f2f;
+  color: rgb(225, 225, 225);
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  @media only screen and (min-width: 768px) {}
+`;
+
+const ArchitectureSectionH1 = styled.h1`
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-size: 28px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 32px;
+  }
+`;
+
+const ArchitectureSectionH2= styled.h2`
+  padding-top: 8px;
+  padding-bottom: 6px;
+  font-size: 24px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 0px;
+    font-size: 28px;
+  }
+`;
+
+const ArchitectureSectionH3= styled.h3`
+  padding-top: 4px;
+  font-size: 20px;
+  font-weight: 900;
+  @media only screen and (min-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+`;
+
+const ArchitectureSectionPara= styled.p`
+  margin-bottom: 12px;
+  @media only screen and (min-width: 768px) {}
+`;
+
+const ArchitectureSectionList= styled.li`
+  margin-bottom: 6px;
+  @media only screen and (min-width: 768px) {}
+`;
+
+
 
 const Architecture = () => {
   return (
     <div>
       <Layout>
       <div className="container page-title">architecture</div>
-      <div
-        className="architecture-section-wrapper"
-        style={{ fontSize: "18px !important" }}
-      >
-        <div className="architecture-section-container container">
-          <div className="architecture-section">
-            <p style={{ paddingTop: "12px" }}>
+      <ArchitectureSectionWrapper>
+        <ArchitectureSectionContainer className="container">
+          <ArchitectureSection>
+            <ArchitectureSectionPara style={{ paddingTop: "12px" }}>
               Your data is end-to-end encrypted with ente. Meaning, they are
-              encrypted with your <code>keys</code>
+              encrypted with your <ArchitectureSectionCode>keys</ArchitectureSectionCode>
               before they leave your device.
-            </p>
-            <p>
-              These <code>keys</code> are available only to you. Meaning only
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              These <ArchitectureSectionCode>keys</ArchitectureSectionCode> are available only to you. Meaning only
               you can access your data else where.
-            </p>
-            <p>What follows is an explanation of how we do what we do.</p>
-            <h1 id="key-encryption">Key Encryption</h1>
-            <h2>Fundamentals</h2>
-            <h3>Master Key</h3>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>What follows is an explanation of how we do what we do.</ArchitectureSectionPara>
+            <ArchitectureSectionH1 id="key-encryption">Key Encryption</ArchitectureSectionH1>
+            <ArchitectureSectionH2>Fundamentals</ArchitectureSectionH2>
+            <ArchitectureSectionH3>Master Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you sign up for ente, your client generates a{" "}
-              <code>masterKey</code> for you. This never leaves your device
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> for you. This never leaves your device
               unencrypted.
-            </p>
-            <h3>Key Encryption Key</h3>
-            <p>
-              Once you choose a password, a <code>keyEncryptionKey</code> is
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3>Key Encryption Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              Once you choose a password, a <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode> is
               derived from it. This never leaves your device.
-            </p>
-            <h2>Flows</h2>
-            <h3>Primary Device</h3>
-            <p>
-              During registration, your <code>masterKey</code> is encrypted with
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Flows</ArchitectureSectionH2>
+            <ArchitectureSectionH3>Primary Device</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              During registration, your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> is encrypted with
               your
-              <code>keyEncryptionKey</code>, and the resultant{" "}
-              <code>encryptedMasterKey</code> is then sent to our servers for
+              <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode>, and the resultant{" "}
+              <ArchitectureSectionCode>encryptedMasterKey</ArchitectureSectionCode> is then sent to our servers for
               storage.
-            </p>
-            <h3 id="key-encryption-flows-secondary-device">Secondary Device</h3>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="key-encryption-flows-secondary-device">Secondary Device</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you sign in on a secondary device, after you successfully
               verify your email, our servers give you back your{" "}
-              <code>encryptedMasterKey</code> that was sent to us by your
+              <ArchitectureSectionCode>encryptedMasterKey</ArchitectureSectionCode> that was sent to us by your
               primary device.
-            </p>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
               You are then prompted to enter your password. Once entered, your{" "}
-              <code>keyEncryptionKey</code> is derived, and the client decrypts
-              your <code>encryptedMasterKey</code> with this, to yield your
-              original <code>masterKey</code>.
-            </p>
-            <p>
+              <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode> is derived, and the client decrypts
+              your <ArchitectureSectionCode>encryptedMasterKey</ArchitectureSectionCode> with this, to yield your
+              original <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
               If the decryption fails, the client will know that the derived{" "}
-              <code>keyEncryptionKey</code> was wrong, indicating an incorrect
+              <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode> was wrong, indicating an incorrect
               password, and will surface this information to you.
-            </p>
-            <h2>Privacy</h2>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Privacy</ArchitectureSectionH2>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 Since only you know your password, only you can derive your{" "}
-                <code>keyEncryptionKey</code>.
-              </li>
-              <li>
-                Since only you can derive your <code>keyEncryptionKey</code>,
+                <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only you can derive your <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode>,
                 only you have access to your
-                <code>masterKey</code>.
-              </li>
+                <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
             </ul>
             <br />
-            <p style={{ color: "grey" }}>
+            <ArchitectureSectionPara style={{ color: "grey" }}>
               <em>
-                Keep reading to learn about how this <code>masterKey</code> is
+                Keep reading to learn about how this <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> is
                 used to encrypt your data.
               </em>
-            </p>
+            </ArchitectureSectionPara>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="file-encryption">File Encryption</h1>
-            <h2>Fundamentals</h2>
-            <h3 id="collection-key">Collection Key</h3>
-            <p>
+            <ArchitectureSectionH1 id="file-encryption">File Encryption</ArchitectureSectionH1>
+            <ArchitectureSectionH2>Fundamentals</ArchitectureSectionH2>
+            <ArchitectureSectionH3 id="collection-key">Collection Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               Each of your files in ente belong to what we call a{" "}
-              <code>collection</code>. A<code>collection</code> can be either a
+              <ArchitectureSectionCode>collection</ArchitectureSectionCode>. A<ArchitectureSectionCode>collection</ArchitectureSectionCode> can be either a
               folder (like &quot;Camera&quot; or &quot;Screenshots&quot;) or an
               album (like &quot;Awkward Team Lunch&quot;).
-            </p>
-            <p>
-              Each <code>collection</code> has a <code>collectionKey</code>.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              Each <ArchitectureSectionCode>collection</ArchitectureSectionCode> has a <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>.
               These never leave your device unencrypted.
-            </p>
-            <h3 id="file-key">File Key</h3>
-            <p>
-              Each of your files have a <code>fileKey</code>. These never leave
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="file-key">File Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              Each of your files have a <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>. These never leave
               your device unencrypted.
-            </p>
-            <h2>Flows</h2>
-            <h3>Upload</h3>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Flows</ArchitectureSectionH2>
+            <ArchitectureSectionH3>Upload</ArchitectureSectionH3>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 Each file and associated metadata is encrypted with randomly
                 generated
-                <code>fileKey</code>s.
-              </li>
-              <li>
-                Each <code>fileKey</code> is encrypted with the{" "}
-                <code>collectionKey</code> of the
-                <code>collection</code> (folder/album) the <code>file</code>{" "}
-                belongs to. In case such a<code>collection</code> does not
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Each <ArchitectureSectionCode>fileKey</ArchitectureSectionCode> is encrypted with the{" "}
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> of the
+                <ArchitectureSectionCode>collection</ArchitectureSectionCode> (folder/album) the <ArchitectureSectionCode>file</ArchitectureSectionCode>{" "}
+                belongs to. In case such a<ArchitectureSectionCode>collection</ArchitectureSectionCode> does not
                 exist, one is created with a randomly generated
-                <code>collectionKey</code>. All <code>collection</code> metadata
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>. All <ArchitectureSectionCode>collection</ArchitectureSectionCode> metadata
                 (like name, folder-path, etc) are encrypted with this{" "}
-                <code>collectionKey</code>.
-              </li>
-              <li>
-                Each <code>collectionKey</code> is then encrypted with your{" "}
-                <code>masterKey</code>.
-              </li>
-              <li>
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Each <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> is then encrypted with your{" "}
+                <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 All of the above mentioned encrypted data is then pushed to the
                 server for storage.
-              </li>
+              </ArchitectureSectionList>
             </ul>
-            <h3>Download</h3>
+            <ArchitectureSectionH3>Download</ArchitectureSectionH3>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 All of the above mentioned encrypted data is pulled from the
                 server.
-              </li>
-              <li>
-                You first decrypt each file’s <code>collectionKey</code> with
-                your <code>masterKey</code>.
-              </li>
-              <li>
-                You then decrypt each file’s <code>fileKey</code> with their
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                You first decrypt each file’s <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> with
+                your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                You then decrypt each file’s <ArchitectureSectionCode>fileKey</ArchitectureSectionCode> with their
                 respective
-                <code>collectionKey</code>s.
-              </li>
-              <li>
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Finally, you decrypt each file and associated metadata with the
                 respective
-                <code>fileKey</code>s.
-              </li>
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
             </ul>
-            <h2>Privacy</h2>
+            <ArchitectureSectionH2>Privacy</ArchitectureSectionH2>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 As explained in the previous section, only you have access to
-                your <code>masterKey</code>.
-              </li>
-              <li>
-                Since only you have access to your <code>masterKey</code>, only
+                your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only you have access to your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, only
                 you can decrypt the
-                <code>collectionKey</code>s.
-              </li>
-              <li>
-                Since only you have access to the <code>collectionKey</code>s,
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only you have access to the <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>s,
                 only you can decrypt the
-                <code>fileKey</code>s.
-              </li>
-              <li>
-                Since only you have access to the <code>fileKey</code>s, only
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only you have access to the <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s, only
                 you can decrypt the files and their associated metadata.
-              </li>
+              </ArchitectureSectionList>
             </ul>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="sharing">Sharing</h1>
-            <h2>Fundamentals</h2>
-            <h3 id="public-key">Public Key</h3>
-            <p>
+            <ArchitectureSectionH1 id="sharing">Sharing</ArchitectureSectionH1>
+            <ArchitectureSectionH2>Fundamentals</ArchitectureSectionH2>
+            <ArchitectureSectionH3 id="public-key">Public Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you sign up for ente, your app generates a{" "}
-              <code>publicKey</code> for you. This is public, and is stored at
+              <ArchitectureSectionCode>publicKey</ArchitectureSectionCode> for you. This is public, and is stored at
               our servers in plain text.
-            </p>
-            <h3 id="private-key">Private Key</h3>
-            <p>
-              Along with the <code>publicKey</code>, your app also generates a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="private-key">Private Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              Along with the <ArchitectureSectionCode>publicKey</ArchitectureSectionCode>, your app also generates a
               corresponding
-              <code>privateKey</code> for you. This never leaves your device
+              <ArchitectureSectionCode>privateKey</ArchitectureSectionCode> for you. This never leaves your device
               unencrypted.
-            </p>
-            <p>
-              The <code>privateKey</code> is encrypted with your{" "}
-              <code>masterKey</code> that only you have access to. This{" "}
-              <code>encryptedPrivateKey</code> is stored at our servers
-            </p>
-            <h2>Flow</h2>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              The <ArchitectureSectionCode>privateKey</ArchitectureSectionCode> is encrypted with your{" "}
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> that only you have access to. This{" "}
+              <ArchitectureSectionCode>encryptedPrivateKey</ArchitectureSectionCode> is stored at our servers
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Flow</ArchitectureSectionH2>
+            <ArchitectureSectionPara>
               Sharing is similar to the previous section, except that the{" "}
-              <code>collectionKey</code> of a<code>collection</code> is shared
+              <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> of a<ArchitectureSectionCode>collection</ArchitectureSectionCode> is shared
               with a receiver after encrypting it with the receiver&#39;s
-              <code>publicKey</code>. To elaborate,
-            </p>
-            <h3>Sender</h3>
+              <ArchitectureSectionCode>publicKey</ArchitectureSectionCode>. To elaborate,
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3>Sender</ArchitectureSectionH3>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 Each file and associated metadata was already encrypted with
                 randomly generated
-                <code>fileKey</code>s.
-              </li>
-              <li>
-                Each of these <code>fileKey</code>s were also encrypted with the{" "}
-                <code>collectionKey</code>
-                of the <code>collection</code> (folder/album) that is now being
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Each of these <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s were also encrypted with the{" "}
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>
+                of the <ArchitectureSectionCode>collection</ArchitectureSectionCode> (folder/album) that is now being
                 shared.
-              </li>
-              <li>
-                The <code>collectionKey</code> is now encrypted with the{" "}
-                <code>publicKey</code> of the receiver.
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                The <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> is now encrypted with the{" "}
+                <ArchitectureSectionCode>publicKey</ArchitectureSectionCode> of the receiver.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 All of the above mentioned encrypted data is then pushed to the
                 server for storage.
-              </li>
+              </ArchitectureSectionList>
             </ul>
-            <h3>Receiver</h3>
+            <ArchitectureSectionH3>Receiver</ArchitectureSectionH3>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 All of the above mentioned encrypted data is pulled from the
                 server.
-              </li>
-              <li>
-                The receiver first decrypts the <code>collectionKey</code> with
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                The receiver first decrypts the <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> with
                 their
-                <code>privateKey</code>.
-              </li>
-              <li>
-                They then decrypt each file’s <code>fileKey</code> with their
+                <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                They then decrypt each file’s <ArchitectureSectionCode>fileKey</ArchitectureSectionCode> with their
                 respective
-                <code>collectionKey</code>s.
-              </li>
-              <li>
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Finally, they decrypt each file and associated metadata with the
                 respective
-                <code>fileKey</code>s.
-              </li>
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
+              </ArchitectureSectionList>
             </ul>
-            <h2>Privacy</h2>
+            <ArchitectureSectionH2>Privacy</ArchitectureSectionH2>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 Since only the receiver has access to their{" "}
-                <code>masterKey</code>, only they can decrypt their
-                <code>encryptedPrivateKey</code> to access their{" "}
-                <code>privateKey</code>.
-              </li>
-              <li>
+                <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, only they can decrypt their
+                <ArchitectureSectionCode>encryptedPrivateKey</ArchitectureSectionCode> to access their{" "}
+                <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Since only the receiver has access to their{" "}
-                <code>privateKey</code>, only they can decrypt the
-                <code>collectionKey</code> that was sent to them.
-              </li>
-              <li>
+                <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>, only they can decrypt the
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> that was sent to them.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Since only the receiver has access to the{" "}
-                <code>collectionKey</code>, only they can decrypt the
-                <code>fileKey</code>s of files belonging to that album/folder.
-              </li>
-              <li>
-                Since only the receiver has access to the <code>fileKey</code>s
+                <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>, only they can decrypt the
+                <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s of files belonging to that album/folder.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only the receiver has access to the <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s
                 of files belonging to that album/folder, only they can decrypt
                 the files and associated metadata.
-              </li>
+              </ArchitectureSectionList>
             </ul>
             <div style={{ padding: "20px", backgroundColor: "#242424" }}>
               Currently you have to trust our servers to give you the correct
-              <code>publicKey</code>. It&#39;s technically possible for the
+              <ArchitectureSectionCode>publicKey</ArchitectureSectionCode>. It&#39;s technically possible for the
               receiver to share this information with you on a separate channel.
               This feature (to export and import public keys) is currently not
               available, and will be added if necessary. If you care about this,
               please upvote this feature within the &quot;roadmap&quot; section
               of the app, or email{" "}
-              <a href="mailto:roadmap@ente.io">roadmap@ente.io</a>. It will be
+              <ArchitectureSectionLink href="mailto:roadmap@ente.io">roadmap@ente.io</ArchitectureSectionLink>. It will be
               prioritized.
             </div>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="key-recovery">Key Recovery</h1>
-            <h2>Fundamentals</h2>
-            <h3 id="recovery-key">Recovery Key</h3>
-            <p>
+            <ArchitectureSectionH1 id="key-recovery">Key Recovery</ArchitectureSectionH1>
+            <ArchitectureSectionH2>Fundamentals</ArchitectureSectionH2>
+            <ArchitectureSectionH3 id="recovery-key">Recovery Key</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you sign up for <strong>ente</strong>, your app generates a{" "}
-              <code>recoveryKey</code> for you. This never leaves your device
+              <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode> for you. This never leaves your device
               unencrypted.
-            </p>
-            <h2>Flow</h2>
-            <h3 id="storage">Storage</h3>
-            <p>
-              Your <code>recoveryKey</code> and <code>masterKey</code> are
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Flow</ArchitectureSectionH2>
+            <ArchitectureSectionH3 id="storage">Storage</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              Your <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode> and <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> are
               encrypted with each other and stored on the server.
-            </p>
-            <h3 id="access">Access</h3>
-            <p>
-              This encrypted <code>recoveryKey</code> is downloaded when you
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="access">Access</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              This encrypted <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode> is downloaded when you
               sign in on a new device. This is decrypted with your{" "}
-              <code>masterKey</code> and surfaced to you whenever you request
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> and surfaced to you whenever you request
               for it.
-            </p>
-            <h3 id="recovery">Recovery</h3>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="recovery">Recovery</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               Post email verification, if you’re unable to unlock your account
               because you have forgotten your password, the client will prompt
-              you to enter your <code>recoveryKey</code>.
-            </p>
-            <p>
-              The client then pulls the <code>masterKey</code> that was earlier
+              you to enter your <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              The client then pulls the <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> that was earlier
               encrypted and pushed to the server (as discussed in{" "}
-              <a href="#key-encryption">Key Encryption</a>), and decrypts it
-              with the entered <code>recoveryKey</code>. If the decryption
+              <ArchitectureSectionLink href="#key-encryption">Key Encryption</ArchitectureSectionLink>), and decrypts it
+              with the entered <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>. If the decryption
               succeeds, the client will know that you have entered the correct{" "}
-              <code>recoveryKey</code>.
-            </p>
-            <p>
-              Now that you have your <code>masterKey</code>, the client will
+              <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              Now that you have your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, the client will
               prompt you to set a new password, using which it will derive a new{" "}
-              <code>keyEncryptionKey</code>. This is then used to encrypt your
-              <code>masterKey</code> and this new{" "}
-              <code>encryptedMasterKey</code> is uploaded to our servers,
+              <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode>. This is then used to encrypt your
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> and this new{" "}
+              <ArchitectureSectionCode>encryptedMasterKey</ArchitectureSectionCode> is uploaded to our servers,
               similar to what was earlier discussed in{" "}
-              <a href="#key-encryption">Key Encryption</a>.
-            </p>
-            <h2>Privacy</h2>
+              <ArchitectureSectionLink href="#key-encryption">Key Encryption</ArchitectureSectionLink>.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Privacy</ArchitectureSectionH2>
             <ul>
-              <li>
-                Since only you have access to your <code>masterKey</code>, only
+              <ArchitectureSectionList>
+                Since only you have access to your <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, only
                 you can access your
-                <code>recoveryKey</code>.
-              </li>
-              <li>
-                Since only you can access your <code>recoveryKey</code>, only
+                <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Since only you can access your <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>, only
                 you can reset your password.
-              </li>
+              </ArchitectureSectionList>
             </ul>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="authentication">Authentication</h1>
-            <h2>Fundamentals</h2>
-            <h3>One Time Token</h3>
-            <p>
+            <ArchitectureSectionH1 id="authentication">Authentication</ArchitectureSectionH1>
+            <ArchitectureSectionH2>Fundamentals</ArchitectureSectionH2>
+            <ArchitectureSectionH3>One Time Token</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you attempt to verify ownership of an email address, our
-              server generates a<code>oneTimeToken</code>, that if presented
+              server generates a<ArchitectureSectionCode>oneTimeToken</ArchitectureSectionCode>, that if presented
               confirms your access to the said email address. This token is
               valid for a short time and can only be used once.
-            </p>
-            <h3>Authentication Token</h3>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3>Authentication Token</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
               When you successfully authenticate yourself against our server by
               proving ownership of your email (and in future any other
               configured vectors), the server generates an
-              <code>authToken</code>, that can from there on be used to
+              <ArchitectureSectionCode>authToken</ArchitectureSectionCode>, that can from there on be used to
               authenticate against our private APIs.
-            </p>
-            <h3>Encrypted Authentication Token</h3>
-            <p>
-              A generated <code>authToken</code> is returned to your client
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3>Encrypted Authentication Token</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              A generated <ArchitectureSectionCode>authToken</ArchitectureSectionCode> is returned to your client
               after being encrypted with your
-              <code>publicKey</code>. This <code>encryptedAuthToken</code> can
+              <ArchitectureSectionCode>publicKey</ArchitectureSectionCode>. This <ArchitectureSectionCode>encryptedAuthToken</ArchitectureSectionCode> can
               only be decrypted with the your
-              <code>privateKey</code>
-            </p>
-            <h2>Flow</h2>
+              <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH2>Flow</ArchitectureSectionH2>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 You are asked for an email address, to which a{" "}
-                <code>oneTimeToken</code> is sent.
-              </li>
-              <li>
+                <ArchitectureSectionCode>oneTimeToken</ArchitectureSectionCode> is sent.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Once you present this information correctly to our server, an{" "}
-                <code>authToken</code> is generated and an{" "}
-                <code>encryptedAuthToken</code> is returned to you, along with
+                <ArchitectureSectionCode>authToken</ArchitectureSectionCode> is generated and an{" "}
+                <ArchitectureSectionCode>encryptedAuthToken</ArchitectureSectionCode> is returned to you, along with
                 your other encrypted keys.
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 You are then prompted to enter your password, using which your{" "}
-                <code>masterKey</code> is derived (as discussed{" "}
-                <a href="#key-encryption-flows-secondary-device">here</a>).
-              </li>
-              <li>
-                Using this <code>masterKey</code>, the rest of your keys,
-                including your <code>privateKey</code>
-                is decrypted (as discussed <a href="#private-key">here</a>).
-              </li>
-              <li>
-                Using your <code>privateKey</code>, the client will then decrypt
+                <ArchitectureSectionCode>masterKey</ArchitectureSectionCode> is derived (as discussed{" "}
+                <ArchitectureSectionLink href="#key-encryption-flows-secondary-device">here</ArchitectureSectionLink>).
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Using this <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, the rest of your keys,
+                including your <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>
+                is decrypted (as discussed <ArchitectureSectionCode href="#private-key">here</ArchitectureSectionCode>).
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                Using your <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>, the client will then decrypt
                 the
-                <code>encryptedAuthToken</code> that was encrypted by our server
+                <ArchitectureSectionCode>encryptedAuthToken</ArchitectureSectionCode> that was encrypted by our server
                 with your
-                <code>publicKey</code>.
-              </li>
-              <li>
-                This decrypted <code>authToken</code> can then from there on be
+                <ArchitectureSectionCode>publicKey</ArchitectureSectionCode>.
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
+                This decrypted <ArchitectureSectionCode>authToken</ArchitectureSectionCode> can then from there on be
                 used to authenticate all API calls against our servers.
-              </li>
+              </ArchitectureSectionList>
             </ul>
-            <h2>Security</h2>
-            <p>
+            <ArchitectureSectionH2>Security</ArchitectureSectionH2>
+            <ArchitectureSectionPara>
               Only by verifying access to your email and knowing your password
               can you obtain an
-              <code>authToken</code> that can be used to authenticate yourself
+              <ArchitectureSectionCode>authToken</ArchitectureSectionCode> that can be used to authenticate yourself
               against our servers.
-            </p>
+            </ArchitectureSectionPara>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="implementation-details">Implementation Details</h1>
-            <p>
+            <ArchitectureSectionH1 id="implementation-details">Implementation Details</ArchitectureSectionH1>
+            <ArchitectureSectionPara>
               We rely on the high level APIs exposed by this wonderful library
               called{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 libsodium
-              </a>
+              </ArchitectureSectionLink>
               .{" "}
-            </p>
-            <h3 id="key-generation">Key Generation</h3>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="key-generation">Key Generation</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_secretbox_keygen</code>
-              </a>
+                <ArchitectureSectionCode>crypto_secretbox_keygen</ArchitectureSectionCode>
+              </ArchitectureSectionLink>
               is used to generate all random keys within the application. Your
-              <code>masterKey</code>, <code>recoveryKey</code>,{" "}
-              <code>collectionKey</code>, <code>fileKey</code>
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>, <ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>,{" "}
+              <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>, <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>
               are all 256-bit keys generated using this API.
-            </p>
-            <h3 id="key-pair-generation">Key Pair Generation</h3>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="key-pair-generation">Key Pair Generation</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/authenticated_encryption#key-pair-generation"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_box_keypair</code>
-              </a>{" "}
+                <ArchitectureSectionCode>crypto_box_keypair</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
               is used to generate your
-              <code>publicKey</code> and
-              <code>privateKey</code> pairs.
-            </p>
-            <h3 id="key-derivation">Key Derivation</h3>
-            <p>
-              <a
+              <ArchitectureSectionCode>publicKey</ArchitectureSectionCode> and
+              <ArchitectureSectionCode>privateKey</ArchitectureSectionCode> pairs.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="key-derivation">Key Derivation</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/password_hashing/default_phf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_pwhash</code>
-              </a>{" "}
+                <ArchitectureSectionCode>crypto_pwhash</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
               is used to derive your
-              <code>keyEncryptionKey</code> from your password.
-            </p>
-            <p>
-              <code>crypto_pwhash_OPSLIMIT_SENSITIVE</code> and{" "}
-              <code>crypto_pwhash_MEMLIMIT_SENSITIVE</code> are used as the
+              <ArchitectureSectionCode>keyEncryptionKey</ArchitectureSectionCode> from your password.
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionCode>crypto_pwhash_OPSLIMIT_SENSITIVE</ArchitectureSectionCode> and{" "}
+              <ArchitectureSectionCode>crypto_pwhash_MEMLIMIT_SENSITIVE</ArchitectureSectionCode> are used as the
               limits for computation and memory respectively. If the operation
               fails due to insufficient memory, the former is doubled and the
               latter is halved progressively, until a key can be derived. If
               during this process the memory limit is reduced to a value less
               than
-              <code>crypto_pwhash_MEMLIMIT_MIN</code>, the client will not let
+              <ArchitectureSectionCode>crypto_pwhash_MEMLIMIT_MIN</ArchitectureSectionCode>, the client will not let
               you register from that device.
-            </p>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
               Internally, this uses{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://github.com/P-H-C/phc-winner-argon2/raw/master/argon2-specs.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Argon2 v1.3
-              </a>
+              </ArchitectureSectionLink>
               , which is regarded as{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://en.wikipedia.org/wiki/Argon2"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 one of the best hashing algorithms
-              </a>
+              </ArchitectureSectionLink>
               currently available.
-            </p>
-            <h3 id="symmetric-encryption">Symmetric Encryption</h3>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="symmetric-encryption">Symmetric Encryption</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/secret-key_cryptography/secretbox"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_secretbox_easy</code>
-              </a>{" "}
+                <ArchitectureSectionCode>crypto_secretbox_easy</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
               is used to encrypt your
-              <code>masterKey</code>,<code>recoveryKey</code>,{" "}
-              <code>privateKey</code>, <code>collectionKey</code> s and
-              <code>fileKey</code>s.
+              <ArchitectureSectionCode>masterKey</ArchitectureSectionCode>,<ArchitectureSectionCode>recoveryKey</ArchitectureSectionCode>,{" "}
+              <ArchitectureSectionCode>privateKey</ArchitectureSectionCode>, <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode> s and
+              <ArchitectureSectionCode>fileKey</ArchitectureSectionCode>s.
               <br style={{ marginBottom: "0px" }} />
               Internally, this uses{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/advanced/stream_ciphers/xsalsa20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 XSalsa20
-              </a>{" "}
+              </ArchitectureSectionLink>{" "}
               stream cipher with{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://datatracker.ietf.org/doc/html/rfc8439#section-2.5"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Poly1305 MAC
-              </a>{" "}
+              </ArchitectureSectionLink>{" "}
               for authentication.
-            </p>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/secret-key_cryptography/secretstream"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_secretstream_*</code>
-              </a>{" "}
+                <ArchitectureSectionCode>crypto_secretstream_*</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
               APIs are used to encrypt your file data in chunks.
               <br style={{ marginBottom: "0px" }} />
               Internally, this uses{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/advanced/stream_ciphers/xchacha20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 XChaCha20
-              </a>{" "}
+              </ArchitectureSectionLink>{" "}
               stream cipher with{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://datatracker.ietf.org/doc/html/rfc8439#section-2.5"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Poly1305 MAC
-              </a>{" "}
+              </ArchitectureSectionLink>{" "}
               for authentication.
-            </p>
-            <h3 id="asymmetric-encryption">Asymmetric Encryption</h3>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="asymmetric-encryption">Asymmetric Encryption</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>crypto_box_seal</code>
-              </a>{" "}
-              is used to encrypt <code>collectionKey</code>
-              along with the receiver&#39;s <code>publicKey</code> for a
+                <ArchitectureSectionCode>crypto_box_seal</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
+              is used to encrypt <ArchitectureSectionCode>collectionKey</ArchitectureSectionCode>
+              along with the receiver&#39;s <ArchitectureSectionCode>publicKey</ArchitectureSectionCode> for a
               folder/album that is to be shared with them.
-            </p>
-            <h3 id="salt-nonce-generation">Salt &amp; Nonce Generation</h3>
-            <p>
-              <a
+            </ArchitectureSectionPara>
+            <ArchitectureSectionH3 id="salt-nonce-generation">Salt &amp; Nonce Generation</ArchitectureSectionH3>
+            <ArchitectureSectionPara>
+              <ArchitectureSectionLink
                 href="https://libsodium.gitbook.io/doc/generating_random_data"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <code>randombytes_buf</code>
-              </a>{" "}
+                <ArchitectureSectionCode>randombytes_buf</ArchitectureSectionCode>
+              </ArchitectureSectionLink>{" "}
               is used to generate a new salt/nonce every time data needs to be
               hashed/encrypted.
-            </p>
+            </ArchitectureSectionPara>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="further-details">Further Details</h1>
-            <p>
+            <ArchitectureSectionH1 id="further-details">Further Details</ArchitectureSectionH1>
+            <ArchitectureSectionPara>
               Thank you for reading so far! For deeper implementation details,
               we request you to kindly checkout{" "}
-              <a
+              <ArchitectureSectionLink
                 href="https://github.com/ente-io"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                our code
-              </a>
+                our ArchitectureSectionCode
+              </ArchitectureSectionLink>
               .
-            </p>
-            <p>
+            </ArchitectureSectionPara>
+            <ArchitectureSectionPara>
               If you have any questions or concerns, or if you&#39;d like to add
               yourself to the list of reviewers below, please drop an email to{" "}
-              <a href="mailto:engineering@ente.io">engineering@ente.io</a>.
-            </p>
+              <ArchitectureSectionLink href="mailto:engineering@ente.io">engineering@ente.io</ArchitectureSectionLink>.
+            </ArchitectureSectionPara>
             <hr style={{ marginTop: "48px" }} />
-            <h1 id="reviewers">Reviewers</h1>
+            <ArchitectureSectionH1 id="reviewers">Reviewers</ArchitectureSectionH1>
             <ul>
-              <li>
+              <ArchitectureSectionList>
                 Atul Aggarwal [
-                <a
+                <ArchitectureSectionLink
                   href="https://www.linkedin.com/in/atulaggarwal/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
-                </a>
+                </ArchitectureSectionLink>
                 ]
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Chaitanya Gupta [
-                <a href="https://lisper.in/" target="_blank" rel="noopener noreferrer">
+                <ArchitectureSectionLink href="https://lisper.in/" target="_blank" rel="noopener noreferrer">
                   Website
-                </a>{" "}
+                </ArchitectureSectionLink>{" "}
                 |{" "}
-                <a
+                <ArchitectureSectionLink
                   href="https://www.linkedin.com/in/chaitanyagupta/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
-                </a>{" "}
+                </ArchitectureSectionLink>{" "}
                 |{" "}
-                <a
+                <ArchitectureSectionLink
                   href="https://twitter.com/chaitanya_gupta"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Twitter
-                </a>
+                </ArchitectureSectionLink>
                 ]
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Chandra Sekar S [
-                <a href="https://cskr.dev" target="_blank" rel="noopener noreferrer">
+                <ArchitectureSectionLink href="https://cskr.dev" target="_blank" rel="noopener noreferrer">
                   Website
-                </a>{" "}
+                </ArchitectureSectionLink>{" "}
                 |{" "}
-                <a
+                <ArchitectureSectionLink
                   href="https://www.linkedin.com/in/cskrdev/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
-                </a>{" "}
+                </ArchitectureSectionLink>{" "}
                 |{" "}
-                <a
+                <ArchitectureSectionLink
                   href="https://twitter.com/cskrdev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Twitter
-                </a>
+                </ArchitectureSectionLink>
                 ]
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Isneesh Marwah [
-                <a
+                <ArchitectureSectionLink
                   href="https://www.linkedin.com/in/isneesh-marwah-89529b5/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
-                </a>{" "}
+                </ArchitectureSectionLink>{" "}
                 |{" "}
-                <a
+                <ArchitectureSectionLink
                   href="https://twitter.com/isneesh"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Twitter
-                </a>
+                </ArchitectureSectionLink>
                 ]
-              </li>
-              <li>
+              </ArchitectureSectionList>
+              <ArchitectureSectionList>
                 Neeraj Gupta [
-                <a
+                <ArchitectureSectionLink
                   href="https://www.linkedin.com/in/ua741/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   LinkedIn
-                </a>{" "}
-                | <a href="https://twitter.com/ua741" 
+                </ArchitectureSectionLink>{" "}
+                | <ArchitectureSectionLink href="https://twitter.com/ua741" 
                 target="_blank"
                 rel="noopener noreferrer">
-                  Twitter</a>]
-              </li>
+                  Twitter</ArchitectureSectionLink>]
+              </ArchitectureSectionList>
             </ul>
-          </div>
-        </div>
-      </div>
+          </ArchitectureSection>
+        </ArchitectureSectionContainer>
+      </ArchitectureSectionWrapper>
       </Layout>
     </div>
   )
 }
 
 export default Architecture
+

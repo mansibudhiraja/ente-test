@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/layout/layout.css'
-import {TeamDetailsLeft, TeamDetailsRight} from '../components/TeamDetails'
+import TeamDetails from '../components/TeamDetails'
 import vishnu from '../images/team/vishnu.png'
 import neeraj from '../images/team/neeraj.png'
 import abhinav from '../images/team/abhinav.png'
@@ -121,49 +121,49 @@ const About = () => {
                         </AboutSectionContents>
 
                         <div className="team-heading">team</div>
-                        <TeamDetailsLeft src={vishnu} name={"vishnu"}
+                        <TeamDetails src={vishnu} name={"vishnu"} direction={"left"}
                             descriptiveLine1={"laid the first brick"} 
                             descriptiveLine2={"has engineered products at Google, Zeta, Flock and Ringo"} 
                             descriptiveLine3={"cares deeply about the sanctity of his personal memories"}/>
 
-                            <TeamDetailsRight src={neeraj}  name={"neeraj"}
+                        <TeamDetails src={neeraj}  name={"neeraj"} direction={"right"}
                             descriptiveLine1={"full stack warrior"} 
                             descriptiveLine2={"has architected infrastructure at Uber, Zeta, Flock and Ringo"} 
                             descriptiveLine3={"overflows them stacks"}/>
                         
-                        <TeamDetailsLeft src={abhinav} name={"abhinav"}
+                        <TeamDetails src={abhinav} name={"abhinav"} direction={"left"}
                             descriptiveLine1={"engineers much of our desktop apps and server"} 
                             descriptiveLine2={"left a cushy job because he identified with the mission"} 
                             descriptiveLine3={"mechanical engineer by discipline"}/>
                         
-                        <TeamDetailsRight src={shanthy} name={"shanthy"}
+                        <TeamDetails src={shanthy} name={"shanthy"} direction={"right"}
                             descriptiveLine1={"constantly finds faults in our code"} 
                             descriptiveLine2={"loves her photos, averages around 10,000 clicks a year"} 
                             descriptiveLine3={"dermatologist by day, qa by night"}/>
                         <br></br>
 
                         <div className="about-section-title">contributors</div>
-                        <TeamDetailsLeft src={rahul} name={"rahul"}
+                        <TeamDetails src={rahul} name={"rahul"} direction={"left"}
                             descriptiveLine1={"nice guy who is emotionally blackmailed into designing everything pretty you see"} 
                             descriptiveLine2={"if something is ugly, blame one of the rest"} 
                             descriptiveLine3={"has the best dogs"}/>
                         
-                        <TeamDetailsRight src={pushkar} name={"pushkar"}
+                        <TeamDetails src={pushkar} name={"pushkar"} direction={"right"}
                             descriptiveLine1={"understands css, attempting to understand women"} 
                             descriptiveLine2={"laid the foundation for our web app"} 
                             descriptiveLine3={"shames us when we write shitty js"}/>
 
-                        <TeamDetailsLeft src={isneesh} name={"isneesh"}
+                        <TeamDetails src={isneesh} name={"isneesh"} direction={"left"}
                             descriptiveLine1={"the calming presence in our lives"} 
                             descriptiveLine2={"when not watering her plants, helps us design and verify our encryption protocols"} 
                             descriptiveLine3={"drinks green tea"}/>    
 
-                        <TeamDetailsRight src={atul} name={"atul"}
+                        <TeamDetails src={atul} name={"atul"} direction={"right"}
                             descriptiveLine1={"soft spoken, wise"} 
                             descriptiveLine2={"has designed and built much of our resilient data-replication layer"} 
                             descriptiveLine3={"has architected many other impressive systems"}/>
                         
-                        <TeamDetailsLeft src={dhiraj} name={"dhiraj"}
+                        <TeamDetails src={dhiraj} name={"dhiraj"} direction={"left"}
                             descriptiveLine1={"good with numbers, helps us stay profitable"} 
                             descriptiveLine2={"also finds bugs and is merciless with his feedback"} 
                             descriptiveLine3={"investment banker, all about hodl"}/> 

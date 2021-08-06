@@ -1,7 +1,7 @@
 import React from "react"
 import {Link} from 'gatsby'
 import {Navbar, Nav, Container} from 'react-bootstrap'
-import Svg from './Svg'
+import EnteSvg from './icons/EnteSvg'
 
 
 const Navigation = () => {
@@ -9,7 +9,7 @@ const Navigation = () => {
         <Container style={{paddingLeft: "0px"}} >
             <Navbar variant="dark" expand="lg" className="top-bar navbar-expand-lg">
                     <Navbar.Brand className= "logo" href="/">
-                        <Svg width="64px" height="20" />
+                        <EnteSvg width="64px" height="20" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarResponsive" className="navbar-dark" />
                     <Navbar.Collapse id="navbarResponsive" className="collapse navbar-collapse justify-content-end">

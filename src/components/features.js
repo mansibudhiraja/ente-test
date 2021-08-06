@@ -1,10 +1,10 @@
 import React from 'react'
 import hero from  '../images/hero.png'
-import simple from '../images/simple.svg'
-import privateImg from '../images/private.svg'
-import permanent from '../images/permanent.svg'
-import open from '../images/open.svg'
-import social from '../images/social.svg'
+import SimpleSvg from '../components/icons/SimpleSvg'
+import PrivateSvg from '../components/icons/PrivateSvg'
+import PermanentSvg from '../components/icons/PermanentSvg'
+import OpenSvg from '../components/icons/OpenSvg'
+import SocialSvg from '../components/icons/SocialSvg'
 import ReactTextRotator from "react-text-rotator"
 import '../components/layout/layout.css'
 import {Link} from 'gatsby'
@@ -85,36 +85,31 @@ const Features = () =>{
                     <FeatureDetails id="feature_0" 
                             title={"simple"}
                             text={"ente is so simple you already know how to use it."}
-                            src={simple} 
-                            alt={"simple - ente is so simple you already know how to use it"} >
+                            svg = {<SimpleSvg width={"59"} height={"58"} alt={"simple - ente is so simple you already know how to use it" }/> } >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_1" 
                             title={"encrypted"}
                             text={"your photos on ente are end-to-end encrypted and only you can access them."}
-                            src={privateImg} 
-                            alt={"private - your photos on ente are end-to-end encrypted and only you can access them"} >
+                            svg = {<PrivateSvg width={"58"} height={"58"} alt={"private - your photos on ente are end-to-end encrypted and only you can access them" } />} >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_2" 
                             title={"reliable"}
                             text={"ente preserves your data across locations, including an underground fallout shelter."}
-                            src={permanent} 
-                            alt={"permanent - preserve your data across locations"} >
+                            svg = {<PermanentSvg width={"44"} height={"59"} alt={"permanent - preserve your data across locations"}/>} >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_3" 
                             title={"trusted"}
                             text={fragment}
-                            src={open} 
-                            alt={"permanent - preserve your data across locations"} >
+                            svg = {<OpenSvg width={"67"} height={"52"} alt={"open source and peer reviewed"}/>} >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_4" 
                             title={"social"}
                             text={"ente lets you share your albums with your loved ones, end-to-end encrypted."}
-                            src={social} 
-                            alt={"social - share your albums, end-to-end encrypted"} >
+                            svg = {<SocialSvg width={"62"} height={"59"} alt={"social - share your albums, end-to-end encrypted"}/>}>
                     </FeatureDetails>
                 </div>
             </div>

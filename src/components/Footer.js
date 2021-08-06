@@ -2,9 +2,9 @@ import React from 'react'
 import EnteAppsImage from "../images/apps.png"
 import AppStoreBadge from "../images/app_store_badge.svg"
 import PlayStore from "../images/play_store.png"
-import WebLink from "../images/web.svg"
+import WebSvg from "../components/icons/WebSvg"
 import {Link} from 'gatsby'
-import Svg from './Svg'
+import EnteSvg from './icons/EnteSvg'
 import styled from 'styled-components'
 
 const Address = styled.div`
@@ -38,7 +38,7 @@ return (
               </div>
               <div className="app-link">
                 <a className="nostyle" href="https://web.ente.io" target="_blank" rel="noreferrer noopener">
-                  <img src={WebLink} alt="ente - web-app link" /></a>
+                  <WebSvg width={"197"} height={"59"} alt="ente - web-app link" /></a>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ return (
     <div className="container footer-section">
       <div className="row">
           <EnteLogo className="col">
-          <Svg width="64px" height="20" />
+          <EnteSvg width="64px" height="20" />
             <div className="app-description">
                 ente is a cloud based mobile and desktop photo storage app with a focus on security and privacy.
             </div>        

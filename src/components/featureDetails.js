@@ -9,7 +9,7 @@ const FeatureDetails = (props) => {
             <div className="feature-item-text">
                 {props.text}
             </div>
-            <img className="feature-item-image" src={props.src} alt={props.alt} />
+                <div className= "feature-item-image">{props.svg}</div>
         </div>
     )
 }

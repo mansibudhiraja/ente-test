@@ -138,6 +138,7 @@ const Privacy = () => {
                             <li>Details of referrers and people your have referred, together with the storage balance accrued, for the purposes of ente&#39;s referral programme.</li>
                             <li>Our communications with you.</li>
                             <li>Your personal account settings.</li>
+                            <li>The email addresses you may choose to share an album with.</li>
                             <li>Takedowns and account suspensions.</li>
                         </ul>
                         <p>6.3 When you use our services, our systems may retain the following metadata in unencrypted form:</p>

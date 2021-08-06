@@ -105,7 +105,7 @@ const Features = () =>{
 
                     <FeatureDetails id="feature_3" 
                             className={"col feature-item"}
-                            title={"trusted"}
+                            title={"open"}
                             text={fragment}
                             svg = {<OpenSvg width={"50"} height={"50"} alt={"open source and peer reviewed"}/>} >
                     </FeatureDetails>

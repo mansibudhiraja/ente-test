@@ -83,33 +83,38 @@ const Features = () =>{
             <div id="features" className="container">
                 <div className="row justify-content-md-center">
                     <FeatureDetails id="feature_0" 
+                            className={"col feature-item"}
                             title={"simple"}
                             text={"ente is so simple you already know how to use it."}
-                            svg = {<SimpleSvg width={"59"} height={"58"} alt={"simple - ente is so simple you already know how to use it" }/> } >
+                            svg = {<SimpleSvg width={"50"} height={"50"} alt={"simple - ente is so simple you already know how to use it" }/> } >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_1" 
+                            className={"col feature-item"}
                             title={"encrypted"}
                             text={"your photos on ente are end-to-end encrypted and only you can access them."}
-                            svg = {<PrivateSvg width={"58"} height={"58"} alt={"private - your photos on ente are end-to-end encrypted and only you can access them" } />} >
+                            svg = {<PrivateSvg width={"50"} height={"50"} alt={"private - your photos on ente are end-to-end encrypted and only you can access them" } />} >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_2" 
+                            className={"col feature-item"}
                             title={"reliable"}
                             text={"ente preserves your data across locations, including an underground fallout shelter."}
-                            svg = {<PermanentSvg width={"44"} height={"59"} alt={"permanent - preserve your data across locations"}/>} >
+                            svg = {<PermanentSvg width={"50"} height={"50"} alt={"permanent - preserve your data across locations"}/>} >
                     </FeatureDetails>
 
                     <FeatureDetails id="feature_3" 
+                            className={"col feature-item"}
                             title={"trusted"}
                             text={fragment}
-                            svg = {<OpenSvg width={"67"} height={"52"} alt={"open source and peer reviewed"}/>} >
+                            svg = {<OpenSvg width={"50"} height={"50"} alt={"open source and peer reviewed"}/>} >
                     </FeatureDetails>
 
-                    <FeatureDetails id="feature_4" 
+                    <FeatureDetails id="feature_4"
+                            className={"col feature-item feature-item-last"} 
                             title={"social"}
                             text={"ente lets you share your albums with your loved ones, end-to-end encrypted."}
-                            svg = {<SocialSvg width={"62"} height={"59"} alt={"social - share your albums, end-to-end encrypted"}/>}>
+                            svg = {<SocialSvg width={"50"} height={"50"} alt={"social - share your albums, end-to-end encrypted"}/>}>
                     </FeatureDetails>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeatureDetails = (props) => {
     return(
-        <div id={props.id} className="col feature-item">
+        <div id={props.id} className={props.className} >
             <div className="feature-item-title">
                 {props.title}
             </div>

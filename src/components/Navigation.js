@@ -21,7 +21,7 @@ const Navigation = () => {
                                 <Link className="nostyle" to="/#download" >apps</Link>
                             </Nav.Item>
                             <Nav.Item as="li"  className="top-bar-item">
-                                <Link className="nostyle" to="/#about">pricing</Link>
+                                <Link className="nostyle" to="/#pricing">pricing</Link>
                             </Nav.Item>
                             <Nav.Item as="li" className="top-bar-item">
                                 <Link className="nostyle" to="/faq">faq</Link>

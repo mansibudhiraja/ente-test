@@ -11,8 +11,8 @@ const Navigation = () => {
                     <Navbar.Brand className= "logo" href="/">
                         <EnteSvg width="64px" height="20" />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarResponsive" className="navbar-dark" />
-                    <Navbar.Collapse id="navbarResponsive" className="collapse navbar-collapse justify-content-end">
+                    <Navbar.Toggle aria-controls="navbarResponsive" className="navbar-dark" style={{border:"none"}}/>
+                    <Navbar.Collapse id="navbarResponsive" className="justify-content-end" >
                         <Nav as="ul" className="navbar-nav ms-auto">
                             <Nav.Item as="li" className="top-bar-item">
                                 <Link className="nostyle" to="/about">about</Link>

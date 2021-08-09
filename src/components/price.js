@@ -26,7 +26,6 @@ class Price extends React.Component{
             if(response.ok){
                 const jsonResponse = await response.json()
                 this.setState({allPlans: jsonResponse.plans})
-                return jsonResponse.plans
             }
         } catch (error) {
             console.log(error)       
@@ -38,8 +37,8 @@ class Price extends React.Component{
             }
 
     async loadMonthlyPrice() {
-       const allPlans = await this.fetchPrice()
-       const monthly = allPlans.filter(plan => plan.period=== "month")
+       await this.fetchPrice()
+       const monthly = this.state.allPlans.filter(plan => plan.period=== "month")
        this.setState({plans: monthly})
     }
 

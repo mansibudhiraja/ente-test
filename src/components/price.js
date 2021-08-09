@@ -79,15 +79,15 @@ class Price extends React.Component{
                             </div>
                             <div className="container" style={{marginTop: "12px"}}>
                                 <div id="pricing-plans-monthly" className="row">
-                                    {this.state.plans.map(plan => (
-                                    <PriceDetails key={plan.id} 
+                                    {this.state.plans.map((plan, index) => (
+                                        <PriceDetails key={plan.id} 
                                             storage={this.convert(plan.storage)} 
                                             price={plan.price} 
                                             duration={plan.period}>
-                                         <div className="col-auto pricing-plan-separator align-self-center"/>  
-                                    </PriceDetails>
-                                    ))}
-                                   
+                                            { index !== this.state.plans.length - 1 
+                                            ? <div className="col-auto pricing-plan-separator align-self-center"/> : null }
+                                        </PriceDetails> 
+                                    ))} 
                                 </div>
                             </div>
     

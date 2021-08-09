@@ -15,7 +15,7 @@ class Price extends React.Component{
         super(props)
         this.state = ({
             plans: [],
-            toggle: false})
+            monthlyToggle: true})
         this.handleToggle = this.handleToggle.bind(this)
     }
 
@@ -42,8 +42,10 @@ class Price extends React.Component{
     }
     
     handleToggle() {
-        this.toggle = !this.toggle
-        if(!this.toggle){
+        const newMonthlyToggle = ! this.state.monthlyToggle
+        console.log(`monthlytoggle: ${newMonthlyToggle}`)
+        this.setState({monthlyToggle: newMonthlyToggle})
+        if(newMonthlyToggle){
             this.fetchPrice().then(plans => {
                 const monthly = plans.filter(plan => plan.period === "month")
                 this.setState({plans: monthly})

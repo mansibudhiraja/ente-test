@@ -1,6 +1,9 @@
 import React from 'react'
 import PriceDetails from './PriceDetails'
 import styled from "styled-components"
+// import {CSSTransition} from 'react-transition-group'
+// import '../components/layout/layout.css'
+
 
 const FreeTrial = styled.div `
     padding-left: 32px;
@@ -14,7 +17,7 @@ class Price extends React.Component{
     constructor(props){
         super(props)
         this.state = ({
-            allplans: [],   //includes the plans array
+            allPlans: [],   //includes the plans array
             plans: [],      //changes dynamically
             monthlyToggle: true})
         this.handleToggle = this.handleToggle.bind(this)
@@ -25,7 +28,7 @@ class Price extends React.Component{
             const response = await fetch("https://api.ente.io/billing/plans/v2")
             if(response.ok){
                 const jsonResponse = await response.json()
-                this.setState({allPlans: jsonResponse.plans})
+                return jsonResponse.plans
             }
         } catch (error) {
             console.log(error)       
@@ -37,8 +40,9 @@ class Price extends React.Component{
             }
 
     async loadMonthlyPrice() {
-       await this.fetchPrice()
-       const monthly = this.state.allPlans.filter(plan => plan.period=== "month")
+       const allplans = await this.fetchPrice()
+       const monthly = allplans.filter(plan => plan.period=== "month")
+       this.setState({allPlans: allplans})
        this.setState({plans: monthly})
     }
 

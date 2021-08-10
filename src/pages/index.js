@@ -2,12 +2,12 @@ import React from "react"
 import Layout from '../components/layout/layout'
 import Features from '../components/features'
 import Price from '../components/price'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const IndexPage = () => {
   return (
       <Layout>
-        <SEO/>
+        <Seo/>
         <Features />
         <Price />
       </Layout>

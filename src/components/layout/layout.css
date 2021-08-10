@@ -279,12 +279,7 @@ svg {
     background: linear-gradient(175.03deg, rgba(53, 53, 53, 0) 13.45%, rgba(66, 251, 117, 0.2) 99.29%);
 }
 
-.download-section {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    mix-blend-mode: normal;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 
 .reviews-container {
     margin-top: 200px;
@@ -310,12 +305,7 @@ svg {
     margin-bottom: 40px;
 }
 
-.footer-section {
-    margin-top: 60px;
-    margin-bottom: 44px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
+
 
 .app-description {
     font-size: 16px;
@@ -328,21 +318,9 @@ svg {
     margin-top: 20px;
 }
 
-.footer-heading {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    margin-top: 32px;
-    margin-bottom: 10px;
-}
 
-.footer-link {
-    color: #B1B2B3;
-    font-size: 16px;
-    line-height: 30px;
-}
+
+
 
 .grey-separator {
     width: 100%;
@@ -448,17 +426,12 @@ code {
     .pricing-plan-duration-toggle {
         padding-top: 60px;
     }
-    .download-section {
-        padding-top: 200px;
-        padding-bottom: 150px;
-    }
+  
     .apps-image {
         max-width: 800px;
         margin-bottom: 0px;
     }
-    .footer-heading {
-        margin-top: 0px;
-    }
+   
     .app-link {
         margin-top: 40px;
     }

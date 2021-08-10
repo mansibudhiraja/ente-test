@@ -17,11 +17,48 @@ const EnteLogo = styled.div`
     color: #66FF91;
 `;
 
+const DownloadSection =styled.div`
+  padding-top: 100px;
+  padding-bottom: 50px;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @media only screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+`;
+
+const FooterSection = styled.div`
+  margin-top: 60px;
+  margin-bottom: 44px;
+  padding-left: 24px;
+  padding-right: 24px;
+`;
+
+const FooterLink = styled.div`
+  color: #B1B2B3;
+  font-size: 16px;
+  line-height: 30px;
+`;
+
+const FooterHeading = styled.div`
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+`;
+
 const Footer = () => {
 return (
 <div>
     <div className="hue">
-      <div className="download-section">
+      <DownloadSection>
         <div className="container">
           <div id="download" className="row align-items-center">
             <div className="col-auto order-lg-first order-first">
@@ -46,9 +83,9 @@ return (
 
         <div className="container reviews-container">
           <div className="col-md-12 text-center">
-            <div className="footer-heading">
+            <FooterHeading>
               user reviews
-            </div>
+            </FooterHeading>
           </div>
           <br></br>
           <div className="col-md-12">
@@ -108,11 +145,11 @@ return (
             </div>
           </div>
         </div>
-      </div>
+      </DownloadSection>
     </div>
     <div className="green-separator">
     </div>
-    <div className="container footer-section">
+    <FooterSection className="container">
       <div className="row">
           <EnteLogo className="col">
           <EnteSvg width="64px" height="20" />
@@ -121,61 +158,61 @@ return (
             </div>        
           </EnteLogo>
           <div className="col">
-              <div className="footer-heading">
+              <FooterHeading>
                 about
-              </div>
-              <div className="footer-link">
+              </FooterHeading>
+              <FooterLink>
                   <Link className="nostyle" to="/faq">faq</Link>
-              </div>
-              <div className="footer-link">
+              </FooterLink>
+              <FooterLink>
                   <Link className="nostyle" to="/privacy">privacy</Link>
-              </div>
-              <div className="footer-link">
+              </FooterLink>
+              <FooterLink>
                   <Link className="nostyle" to="/terms">terms</Link>
-              </div>
-              <div className="footer-link ">
+              </FooterLink>
+              <FooterLink>
                   <Link className="nostyle" to="/transparency">transparency</Link>
-              </div>
+              </FooterLink>
             </div>
             <div className="col">
-              <div className="footer-heading">
+              <FooterHeading>
                 apps
-              </div>
-              <div className="footer-link">
+              </FooterHeading>
+              <FooterLink>
                  <a className="nostyle" href="https://play.google.com/store/apps/details?id=io.ente.photos" target="_blank" rel="noreferrer noopener">android</a>
-              </div>
-              <div className="footer-link">
+              </FooterLink>
+              <FooterLink>
                 <a className="nostyle" href="https://apps.apple.com/in/app/ente-photos/id1542026904" target="_blank" rel="noreferrer noopener">ios</a>
-              </div>
-              <div className="footer-link ">
+              </FooterLink>
+              <FooterLink>
                 <a className="nostyle " href="https://web.ente.io" target="_blank" rel="noreferrer noopener">web</a>
-              </div>
+              </FooterLink>
             </div>
             <div className="col">
-              <div className="footer-heading">
+              <FooterHeading>
                   source code
-              </div>
-              <div className="footer-link">
+              </FooterHeading>
+              <FooterLink>
                  <a className="nostyle" href="https://github.com/ente-io/frame" target="_blank" rel="noreferrer noopener">mobile</a>
-              </div>
-              <div className="footer-link">
+              </FooterLink>
+              <FooterLink>
                 <a className="nostyle" href="https://github.com/ente-io/bada-frame" target="_blank" rel="noreferrer noopener">desktop</a>
-              </div>
+              </FooterLink>
             </div>
             <div className="col">
-              <div className="footer-heading">
+              <FooterHeading>
                   contact
-              </div>
-              <div className="footer-link">
+              </FooterHeading>
+              <FooterLink>
                  <a className="nostyle" href="mailto:contact@ente.io">contact@ente.io</a>
                  <div className="grey-separator"></div>
                  <Address>H1304, PFS, Old Airport Road, Bengaluru, India</Address>
                  <div className="grey-separator"></div>
                  <Address >Denemarkenstraat 90, 2034 AD, Haarlem, Netherlands</Address>
-              </div>
+              </FooterLink>
             </div>
         </div>
-    </div>
+    </FooterSection>
 </div>
 )
 }

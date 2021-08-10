@@ -2,6 +2,7 @@ import React from 'react'
 import PriceDetails from './PriceDetails'
 import styled from "styled-components"
 
+
 const FreeTrial = styled.div `
     padding-left: 32px;
     padding-right: 32px; 
@@ -88,6 +89,7 @@ class Price extends React.Component{
                                             { index !== this.state.plans.length - 1 
                                             ? <div className="col-auto pricing-plan-separator align-self-center"/> : null }
                                         </PriceDetails> 
+                                 
                                     ))} 
                                 </div>
                             </div>

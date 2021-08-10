@@ -43,7 +43,6 @@ class Price extends React.Component{
     
     handleToggle() {
         const newMonthlyToggle = ! this.state.monthlyToggle
-        console.log(`monthlytoggle: ${newMonthlyToggle}`)
         this.setState({monthlyToggle: newMonthlyToggle})
         if(newMonthlyToggle){
             this.fetchPrice().then(plans => {

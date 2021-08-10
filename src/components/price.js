@@ -15,6 +15,7 @@ class Price extends React.Component{
     constructor(props){
         super(props)
         this.state = ({
+            allPlans : [],
             plans: [],
             monthlyToggle: true})
         this.handleToggle = this.handleToggle.bind(this)
@@ -25,7 +26,7 @@ class Price extends React.Component{
             const response = await fetch("https://api.ente.io/billing/plans/v2")
             if(response.ok){
                 const jsonResponse = await response.json()
-                return jsonResponse.plans
+                this.setState({allPlans: jsonResponse.plans})
             }
         } catch (error) {
             console.log(error)       
@@ -37,8 +38,8 @@ class Price extends React.Component{
             }
 
     async loadMonthlyPrice() {
-       const allPlans = await this.fetchPrice()
-       const monthly = allPlans.filter(plan => plan.period=== "month")
+       await this.fetchPrice()
+       const monthly = this.state.allPlans.filter(plan => plan.period=== "month")
        this.setState({plans: monthly})
     }
     
@@ -46,17 +47,13 @@ class Price extends React.Component{
         const newMonthlyToggle = ! this.state.monthlyToggle
         this.setState({monthlyToggle: newMonthlyToggle})
         if(newMonthlyToggle){
-            this.fetchPrice().then(plans => {
-                const monthly = plans.filter(plan => plan.period === "month")
+                const monthly = this.state.allPlans.filter(plan => plan.period === "month")
                 this.setState({plans: monthly})
-            })
         }
         else{
-            this.fetchPrice().then(plans => {
-                const yearly = plans.filter(plan => plan.period === "year")
+                const yearly = this.state.allPlans.filter(plan => plan.period === "year")
                 this.setState({plans: yearly})
-            })
-        }
+            }
     }
 
 
